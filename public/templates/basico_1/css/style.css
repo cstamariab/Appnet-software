@@ -1,0 +1,79 @@
+html, body, #page {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+
+.col{
+
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    float: left; position: relative!important;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: none;
+
+  }
+
+  .col-cinco{width: 20%}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .col-xs-cinco{width: 20%}
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+
+
+
+
+/*.template-1 *{background-color: rgba(100,50,40,.5)}*/
+.logo-center{ display: table; margin: 0 auto;   width: 15vw; position: relative; display: table; margin: 0 auto;margin-top: 24px; z-index: 999999999999999}
+.bg{position: absolute; z-index: -1; width: 100vw; height: 100vh; background-size: 100% auto;}
+.template-1 .container{ width: 95%; margin: 0 auto; display: table;  height: 100vh;}
+.template-1 .content{  display: table-cell;vertical-align: middle; height: 100vh; }
+.template-1 .slide{background-size: 100% auto!important; background-position: center;}
+.template-1 .slide img{width: 90%; display: table; margin: 0 auto; visibility: hidden;}
+.template-1  h1{ font-size: 11vw!important; color:#f90; line-height: 100%; position: relative; float: left; width: 100%}
+.template-1  h2{ font-size: 4vw!important; color:#FFF; position: relative; float: left; width: 100%}
+.template-1  h3{ font-size: 2vw!important; color:#fff; position: relative; float: left; width: 100%}
+.template-1 .textos{ background-color: rgba(0,0,0,.5); padding: 2vw; width: 40%; display: table-cell;
+    vertical-align: middle;}
+.template-1 .imagen{ width: 60%; }
+
+@media only screen
+
+and (orientation : portrait) {
+  .bg{ background-size: auto 100% ;}
+  .template-1  h1{ font-size: 11vh!important; color:#f90; line-height: 100%; position: relative; float: left; width: 100%}
+  .template-1  h2{ font-size: 4vh!important; color:#FFF; position: relative; float: left; width: 100%}
+  .template-1  h3{ font-size: 2vh!important; color:#fff; position: relative; float: left; width: 100%}
+  .logo-center{ display: table; margin: 0 auto;   width: 15vh; position: relative; display: table; margin: 0 auto;margin-top: 24px; z-index: 999999999999999}
+  .template-1 .textos,
+  .template-1 .imagen{ width: 100%; }
+  .template-1 .imagen{ margin-top: -4vh}
+
+  .template-1 h

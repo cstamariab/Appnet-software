@@ -1,0 +1,368 @@
+html, body, #page {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+section{ margin-top: -24px}
+
+.col{
+
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    float: left; position: relative!important;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: none;
+
+  }
+
+ .col-cinco{width: 20%}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .col-xs-cinco{width: 20%}
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+
+.item{}
+
+  .center-content{
+  display: -moz-flex!important;
+  display: -webkit-flex!important;
+  display: -ms-flex!important;
+  display: flex!important;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  }
+
+.template-1{}
+.logo-center{ display: table; margin: 0 auto; margin-top: 30px;  width: 220px; position: relative; display: table; margin: 0 auto;margin-top: 24px; z-index: 999999999999999}
+.template-1 .container{ width: 90%; margin: 0 auto; display: table; max-width: 1600px; height: 100vh;}
+.template-1 .content{  display: table-cell;vertical-align: middle; height: 100vh}
+.template-1 .slide{background-size: 100% auto!important; background-position: center;}
+.template-1 .slide img{width: 90%; display: table; margin: 0 auto}
+
+
+@media only screen
+
+and (orientation : portrait) {
+  .template-1 .slide{background-size:auto 100%!important; background-position: center;}
+
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{ width: 100%!important}
+h1, h2{ text-align: center}
+.container{ padding-top: 100px}
+
+}
+
+
+  .sushi{ background-image: url('../imagenes/sushi-bg.jpg')!important; }
+  .sushi2{ background-image: url('../imagenes/sushi-bg2.jpg')!important;}
+
+
+  .crazy-carrusel{position: absolute; left: 10px; bottom: 10px;}
+.multiple-items li{ position: relative; height: 25vw; overflow: hidden;}
+
+
+  
+
+  .logo-sushi{ background-image: url('../imagenes/logo-sushi.png'); background-size: 100% auto; width: 300px; height: 150px; top: 30px;position: absolute; left: 50%; margin-left: -150px; background-repeat:  no-repeat;  z-index: 9999}
+
+
+.template-2{}
+.template-2{}
+
+.template-2 .multiple-items {width: 100%;  z-index: 99999999 ; height: 33.3vw;  position: absolute; bottom: 24px;}
+.template-2 .multiple-items li{ position: relative; height: 33.3vw; overflow: hidden; }
+.template-2-vertical .multiple-items {width: 100%;  z-index: 99999999 ; height: 50vw;  position: absolute; bottom: 24px;}
+
+
+.template-2-vertical .multiple-items li{ position: relative; height: 50vw; overflow: hidden;}
+
+.template-3 .producto .price{
+ bottom: 0; font-size: 40px
+
+}
+.fullscreen{ width: 20px; height: 20px; background-image: url(../fullscreen.svg); background-size: 100% auto; position:absolute; bottom: 8px; right: 8px; z-index: 99999900000000000000000000000000000000009; cursor: pointer;}
+
+.center{ margin: 0 auto!important; display: table!important}
+.case-a{ background-image: url('../imagenes/case-a.jpg'); background-size: 100% auto; background-repeat: no-repeat; background-color: #fff}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+}
+
+*:hover{
+  transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+}
+
+a{
+  color: #E97603;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+body{
+  overflow-x: hidden;
+  height: 100%;
+}
+
+header{
+  position: relative;
+  z-index: 9969;
+  left: 0;
+  right: 0;
+  padding: 0px 2em;
+}
+
+header h1{
+  margin: 0;
+}
+
+
+
+header .menu-btn h2{
+  font-size: 1.5em;
+  color: #e97603;
+  line-height: 0.5em;
+  margin-right: 5px;
+}
+
+#slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#slider img.princi{
+  position: absolute;
+  top: -2em;
+  left: 0em;
+}
+
+.carousel-inner{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.carousel-inner .item{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#slider .carousel-caption{
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0em;
+  text-align: left;
+  margin-top: 30em;
+}
+
+#slider .carousel-caption h2{
+  font-size: 7em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 0.2em;
+  text-shadow: none;
+  width: 60%;
+  margin-top: 0;
+  font-weight: bold;
+  background: rgba(144,191,60,1);
+  padding: 0.3em;
+}
+
+#slider .carousel-caption h3{
+  font-size: 3em;
+  color: #696a6c;
+  text-align: left;
+  margin-top: 0;
+  text-shadow: none;
+  margin-bottom: 1em;
+}
+
+#slider .carousel-caption .marca{
+  float: right;
+  margin-right: -2em;
+}
+
+#slider .carousel-caption .marca img{
+  max-width: 200px;
+}
+
+#slider .carousel-caption button{
+  font-size: 4em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0.4em;
+  background: transparent !important;
+  border: solid 2px #93be3b !important;
+  color: #93be3b !important;
+}
+
+#slider .carousel-caption button.precio-oferta{
+  color: #FFF;
+  border-color: green;
+  background-color: green;
+}
+
+#slider .carousel-caption button.precio-anterior{
+  color: #999;
+}
+
+.oferta{
+  font-size: 3.5em;
+  position: absolute;
+  left: -1em;
+  top: -0.6em;
+  padding: 1em 1.6em;
+  background: #a6132d;
+  color: #FFF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer{
+  color: #fff; font-size: 17px;
+  position: absolute;
+  bottom: 0;
+  padding: 5px; background-color: #000; min-width: 100vw; right: 0; text-align: center; z-index: 99999999999999;
+
+
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+
+.item img.princi{
+  margin-left: -12em !important;
+  transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  opacity: 0;
+}
+
+.item.active img.princi{
+  margin-left: 0em !important;
+  transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  opacity: 1;
+}
+
+.item .carousel-caption{
+  left: 105%;
+  transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.item.active .carousel-caption{
+  left: 55%;
+  transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+h1{ color:#fff; line-height: 100%}
+h2{ color:#FFF}
+  .sushi .price{font-size: 200px!important}
+
+
+@media (max-width: 1400px) {
+
+  .sushi .price{font-size: 130px!important}
+
+}

@@ -1,0 +1,395 @@
+[06-Feb-2017 09:31:12 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:31:13 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:31:14 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:31:15 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:31:16 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:31:16 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:31:34 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:31:35 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:34:20 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:34:30 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:34:31 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:34:31 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:34:31 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:34:31 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:36:34 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:36:35 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:36:35 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 09:36:35 America/Chicago] PHP Fatal error:  Call to undefined function mysqli_init() in /home/appnet/public_html/appnet/system/database/drivers/mysqli/mysqli_driver.php on line 135
+[06-Feb-2017 19:20:15 America/Chicago] PHP Fatal error:  Call to undefined method Empresa::controller() in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 14
+[06-Feb-2017 19:20:28 America/Chicago] PHP Fatal error:  Call to undefined function controller() in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 14
+[06-Feb-2017 19:20:29 America/Chicago] PHP Fatal error:  Call to undefined function controller() in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 14
+[08-Feb-2017 09:14:13 America/Chicago] PHP Fatal error:  Multiple access type modifiers are not allowed in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 18
+[08-Feb-2017 09:14:15 America/Chicago] PHP Fatal error:  Multiple access type modifiers are not allowed in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 18
+[08-Feb-2017 10:49:38 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:49:40 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:49:52 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:49:53 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:49:53 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:49:54 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:50:30 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:50:52 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:50:53 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:51:14 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 10:51:15 America/Chicago] PHP Fatal error:  Call to a member function get_planes() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 27
+[08-Feb-2017 13:19:43 America/Chicago] PHP Fatal error:  Call to undefined function dd() in /home/appnet/public_html/appnet/application/models/Empresa_model.php on line 17
+[08-Feb-2017 13:53:06 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 13:53:13 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 13:53:23 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 13:53:24 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 13:53:33 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 13:53:40 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 13:53:41 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 13:53:41 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 13:54:52 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 14:09:21 America/Chicago] PHP Fatal error:  Call to a member function get_last_ten_entries() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 29
+[08-Feb-2017 14:54:12 America/Chicago] PHP Parse error:  syntax error, unexpected '$id' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Empresa_model.php on line 42
+[08-Feb-2017 14:54:15 America/Chicago] PHP Parse error:  syntax error, unexpected '$id' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Empresa_model.php on line 42
+[08-Feb-2017 14:54:59 America/Chicago] PHP Parse error:  syntax error, unexpected '$id' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Empresa_model.php on line 42
+[08-Feb-2017 14:55:18 America/Chicago] PHP Parse error:  syntax error, unexpected '$id' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Empresa_model.php on line 42
+[08-Feb-2017 14:59:27 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 96
+[08-Feb-2017 14:59:39 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 96
+[08-Feb-2017 15:00:57 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 97
+[08-Feb-2017 15:01:10 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 97
+[08-Feb-2017 15:01:11 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 97
+[08-Feb-2017 15:01:12 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 97
+[08-Feb-2017 15:03:37 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/appnet/public_html/appnet/index.php on line 57
+[08-Feb-2017 15:34:45 America/Chicago] PHP Fatal error:  Call to a member function set_title() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 10
+[08-Feb-2017 16:39:05 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 25
+[08-Feb-2017 16:39:07 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 25
+[08-Feb-2017 16:39:23 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 25
+[08-Feb-2017 16:39:57 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 25
+[08-Feb-2017 16:39:57 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 25
+[08-Feb-2017 16:39:58 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 25
+[08-Feb-2017 16:40:57 America/Chicago] PHP Parse error:  syntax error, unexpected '$session' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 25
+[08-Feb-2017 16:41:03 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 25
+[08-Feb-2017 16:42:10 America/Chicago] PHP Parse error:  syntax error, unexpected 'redirect' (T_STRING) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 26
+[08-Feb-2017 16:42:11 America/Chicago] PHP Parse error:  syntax error, unexpected 'redirect' (T_STRING) in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 26
+[08-Feb-2017 17:12:27 America/Chicago] PHP Fatal error:  Call to undefined function uri_segment() in /home/appnet/public_html/appnet/application/views/layouts/layout_admin.php on line 98
+[08-Feb-2017 17:12:51 America/Chicago] PHP Fatal error:  Call to undefined function uri_segment() in /home/appnet/public_html/appnet/application/views/layouts/layout_admin.php on line 98
+[08-Feb-2017 18:20:49 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 24
+[08-Feb-2017 18:21:48 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 24
+[08-Feb-2017 18:21:49 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 24
+[08-Feb-2017 18:21:50 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 24
+[08-Feb-2017 18:22:12 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 24
+[08-Feb-2017 18:22:12 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 24
+[08-Feb-2017 18:22:22 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 20
+[08-Feb-2017 18:22:59 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 19
+[08-Feb-2017 18:23:03 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 23
+[08-Feb-2017 18:23:06 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 23
+[08-Feb-2017 18:24:42 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 19
+[08-Feb-2017 19:25:37 America/Chicago] PHP Fatal error:  Call to a member function insert_sucursal() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 34
+[08-Feb-2017 19:37:55 America/Chicago] PHP Fatal error:  Call to undefined method Sucursal::_messages() in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 56
+[08-Feb-2017 19:44:44 America/Chicago] PHP Parse error:  syntax error, unexpected '$string' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 122
+[08-Feb-2017 19:45:15 America/Chicago] PHP Fatal error:  Call to undefined method Sucursal::_messages() in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 56
+[08-Feb-2017 19:45:26 America/Chicago] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting '{' in /home/appnet/public_html/appnet/application/controllers/Sucursal_1.php on line 1
+[08-Feb-2017 19:46:48 America/Chicago] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 63
+[08-Feb-2017 19:47:34 America/Chicago] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting '{' in /home/appnet/public_html/appnet/application/controllers/Sucursal_1.php on line 1
+[08-Feb-2017 19:49:09 America/Chicago] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home/appnet/public_html/appnet/application/controllers/Sucursal_1.php on line 4
+[09-Feb-2017 09:21:47 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/controllers/Punto_app.php on line 9
+[09-Feb-2017 09:23:00 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/controllers/Punto_app.php on line 9
+[09-Feb-2017 09:24:43 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/controllers/Punto_app.php on line 9
+[09-Feb-2017 09:26:10 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/controllers/Punto_app.php on line 9
+[09-Feb-2017 14:07:46 America/Chicago] PHP Fatal error:  Call to undefined method Sucursal_model::verifica_ruta() in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 41
+[09-Feb-2017 14:08:05 America/Chicago] PHP Fatal error:  Call to undefined method Sucursal_model::verifica_ruta() in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 41
+[09-Feb-2017 14:27:48 America/Chicago] PHP Parse error:  syntax error, unexpected '-', expecting '{' in /home/appnet/public_html/appnet/application/controllers/Punto-app.php on line 1
+[09-Feb-2017 15:39:07 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 61
+[09-Feb-2017 15:39:08 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 61
+[09-Feb-2017 15:39:21 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 61
+[09-Feb-2017 15:39:37 America/Chicago] PHP Fatal error:  Call to undefined method Sucursal_model::get_empresa_template() in /home/appnet/public_html/appnet/application/controllers/admin/Sucursal.php on line 58
+[09-Feb-2017 16:44:04 America/Chicago] PHP Fatal error:  Trait 'Carbon\Carbon' not found in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 6
+[09-Feb-2017 16:50:47 America/Chicago] PHP Fatal error:  require(): Failed opening required 'path/to/Carbon.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 3
+[09-Feb-2017 16:51:04 America/Chicago] PHP Fatal error:  require(): Failed opening required 'path/to/Carbon.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 3
+[09-Feb-2017 16:51:54 America/Chicago] PHP Fatal error:  Trait 'Carbon\Carbon' not found in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 6
+[09-Feb-2017 16:59:08 America/Chicago] PHP Fatal error:  Empresa cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 6
+[09-Feb-2017 17:09:33 America/Chicago] PHP Fatal error:  Empresa cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 6
+[09-Feb-2017 17:09:36 America/Chicago] PHP Fatal error:  Empresa cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 6
+[09-Feb-2017 17:09:42 America/Chicago] PHP Fatal error:  Empresa cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 6
+[09-Feb-2017 17:09:43 America/Chicago] PHP Fatal error:  Empresa cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 6
+[09-Feb-2017 17:09:43 America/Chicago] PHP Fatal error:  Empresa cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/admin/Empresa.php on line 6
+[10-Feb-2017 08:35:28 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/admin/Usuarios.php on line 53
+[10-Feb-2017 08:35:29 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/admin/Usuarios.php on line 53
+[10-Feb-2017 08:35:30 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/admin/Usuarios.php on line 53
+[10-Feb-2017 08:35:53 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/admin/Usuarios.php on line 53
+[10-Feb-2017 08:35:54 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/admin/Usuarios.php on line 53
+[10-Feb-2017 08:36:03 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/admin/Usuarios.php on line 53
+[10-Feb-2017 08:36:19 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/admin/Usuarios.php on line 53
+[10-Feb-2017 09:20:02 America/Chicago] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Usuario_model.php on line 16
+[10-Feb-2017 09:20:04 America/Chicago] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Usuario_model.php on line 16
+[10-Feb-2017 09:20:18 America/Chicago] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Usuario_model.php on line 16
+[10-Feb-2017 11:22:53 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Usuario_model.php on line 58
+[13-Feb-2017 15:01:50 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/super_admin/Administrador.php on line 22
+[13-Feb-2017 15:02:41 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/super_admin/Administrador.php on line 22
+[13-Feb-2017 17:54:15 America/Chicago] PHP Parse error:  syntax error, unexpected '$usuario' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 21
+[13-Feb-2017 17:54:16 America/Chicago] PHP Parse error:  syntax error, unexpected '$usuario' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 21
+[13-Feb-2017 17:54:18 America/Chicago] PHP Parse error:  syntax error, unexpected '$usuario' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 21
+[13-Feb-2017 17:55:24 America/Chicago] PHP Parse error:  syntax error, unexpected '$usuario' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 21
+[13-Feb-2017 17:55:25 America/Chicago] PHP Parse error:  syntax error, unexpected '$usuario' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 21
+[13-Feb-2017 17:55:26 America/Chicago] PHP Parse error:  syntax error, unexpected '$usuario' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 21
+[13-Feb-2017 17:56:42 America/Chicago] PHP Parse error:  syntax error, unexpected '$usuario' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 21
+[13-Feb-2017 17:57:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$usuario' (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 21
+[13-Feb-2017 17:57:29 America/Chicago] PHP Parse error:  syntax error, unexpected 'insert_admin' (T_STRING), expecting variable (T_VARIABLE) in /home/appnet/public_html/appnet/application/models/Admin_model.php on line 28
+[13-Feb-2017 19:55:17 America/Chicago] PHP Fatal error:  Index cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 5
+[13-Feb-2017 19:55:26 America/Chicago] PHP Fatal error:  Index cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 5
+[13-Feb-2017 19:55:27 America/Chicago] PHP Fatal error:  Index cannot use Carbon\Carbon - it is not a trait in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 5
+[13-Feb-2017 19:57:10 America/Chicago] PHP Fatal error:  Class 'Carbon' not found in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 32
+[13-Feb-2017 19:57:11 America/Chicago] PHP Fatal error:  Class 'Carbon' not found in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 32
+[13-Feb-2017 19:57:12 America/Chicago] PHP Fatal error:  Class 'Carbon' not found in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 32
+[13-Feb-2017 19:57:24 America/Chicago] PHP Fatal error:  Class 'Carbon\Carbon' not found in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 32
+[13-Feb-2017 19:57:25 America/Chicago] PHP Fatal error:  Class 'Carbon\Carbon' not found in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 32
+[13-Feb-2017 19:57:41 America/Chicago] PHP Fatal error:  Class 'Carbon\Carbon' not found in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 32
+[13-Feb-2017 21:39:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'for' (T_FOR) in /home/appnet/public_html/appnet/application/views/super_admin/planes/nuevo.php on line 23
+[13-Feb-2017 21:39:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'for' (T_FOR) in /home/appnet/public_html/appnet/application/views/super_admin/planes/nuevo.php on line 23
+[14-Feb-2017 08:18:40 America/Chicago] PHP Fatal error:  Call to undefined function dd() in /home/appnet/public_html/appnet/application/views/super_admin/planes/editar.php on line 3
+[14-Feb-2017 08:18:41 America/Chicago] PHP Fatal error:  Call to undefined function dd() in /home/appnet/public_html/appnet/application/views/super_admin/planes/editar.php on line 3
+[14-Feb-2017 08:19:04 America/Chicago] PHP Parse error:  syntax error, unexpected '"<pre>"' (T_CONSTANT_ENCAPSED_STRING) in /home/appnet/public_html/appnet/application/helpers/util_helper.php on line 5
+[14-Feb-2017 08:19:06 America/Chicago] PHP Parse error:  syntax error, unexpected '"<pre>"' (T_CONSTANT_ENCAPSED_STRING) in /home/appnet/public_html/appnet/application/helpers/util_helper.php on line 5
+[14-Feb-2017 08:19:30 America/Chicago] PHP Parse error:  syntax error, unexpected '"<pre>"' (T_CONSTANT_ENCAPSED_STRING) in /home/appnet/public_html/appnet/application/helpers/util_helper.php on line 5
+[14-Feb-2017 08:22:49 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/views/super_admin/planes/editar.php on line 25
+[14-Feb-2017 08:22:50 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/views/super_admin/planes/editar.php on line 25
+[14-Feb-2017 08:22:51 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/appnet/public_html/appnet/application/views/super_admin/planes/editar.php on line 25
+[14-Feb-2017 09:30:35 America/Chicago] PHP Fatal error:  Call to undefined method Utl_model::update_plan() in /home/appnet/public_html/appnet/application/controllers/super_admin/Planes.php on line 37
+[14-Feb-2017 09:36:53 America/Chicago] PHP Fatal error:  Call to undefined method Utl_model::update_plan() in /home/appnet/public_html/appnet/application/controllers/super_admin/Planes.php on line 37
+[14-Feb-2017 09:40:55 America/Chicago] PHP Fatal error:  Call to undefined method Utl_model::update_plan() in /home/appnet/public_html/appnet/application/controllers/super_admin/Planes.php on line 37
+[14-Feb-2017 09:41:22 America/Chicago] PHP Fatal error:  Call to undefined function messages() in /home/appnet/public_html/appnet/application/controllers/super_admin/Planes.php on line 38
+[14-Feb-2017 18:53:11 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 33
+[14-Feb-2017 18:54:05 America/Chicago] PHP Fatal error:  Call to undefined method Carbon\Carbon::date() in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 32
+[14-Feb-2017 19:21:43 America/Chicago] PHP Fatal error:  Call to undefined method Utl_model::rpt_super_admin() in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 35
+[14-Feb-2017 19:21:45 America/Chicago] PHP Fatal error:  Call to undefined method Utl_model::rpt_super_admin() in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 35
+[14-Feb-2017 19:21:50 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 30
+[14-Feb-2017 19:21:51 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 30
+[14-Feb-2017 19:22:14 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 30
+[14-Feb-2017 19:32:00 America/Chicago] PHP Fatal error:  Call to undefined method Utl_model::rpt_super_admin() in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 35
+[14-Feb-2017 20:41:37 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:41:38 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:46:27 America/Chicago] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 59
+[14-Feb-2017 20:46:38 America/Chicago] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 59
+[14-Feb-2017 20:46:47 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:46:48 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:46:49 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:47:48 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:47:57 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:47:58 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:50:10 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:50:13 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:50:14 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:52:47 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:52:50 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:52:51 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:52:51 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:52:52 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:52:52 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:52:52 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:53:09 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:53:10 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:53:18 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:53:29 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:53:30 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:53:31 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:53:44 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:53:45 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:54:50 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:54:50 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:54:50 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:54:50 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:55:05 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:55:06 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:55:10 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:55:12 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:55:32 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Utl_model.php on line 81
+[14-Feb-2017 20:58:23 America/Chicago] PHP Parse error:  syntax error, unexpected '$dato' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 61
+[14-Feb-2017 20:58:30 America/Chicago] PHP Parse error:  syntax error, unexpected '$dato' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 61
+[14-Feb-2017 20:58:31 America/Chicago] PHP Parse error:  syntax error, unexpected '$dato' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 61
+[14-Feb-2017 21:11:20 America/Chicago] PHP Parse error:  syntax error, unexpected '$dt' (T_VARIABLE), expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 33
+[14-Feb-2017 21:11:25 America/Chicago] PHP Parse error:  syntax error, unexpected '$dt' (T_VARIABLE), expecting ',' or ';' in /home/appnet/public_html/appnet/application/controllers/super_admin/Index.php on line 33
+[14-Feb-2017 21:39:50 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Usuario_model.php on line 92
+[14-Feb-2017 21:57:43 America/Chicago] PHP Fatal error:  Call to undefined function messagges() in /home/appnet/public_html/appnet/application/controllers/super_admin/Login.php on line 145
+[14-Feb-2017 21:58:18 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/appnet/public_html/appnet/application/controllers/super_admin/Login.php on line 143
+[14-Feb-2017 21:58:25 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/appnet/public_html/appnet/application/controllers/super_admin/Login.php on line 143
+[14-Feb-2017 21:58:39 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/appnet/public_html/appnet/application/controllers/super_admin/Login.php on line 143
+[14-Feb-2017 22:00:57 America/Chicago] PHP Fatal error:  Call to undefined function messagges() in /home/appnet/public_html/appnet/application/controllers/super_admin/Login.php on line 146
+[14-Feb-2017 22:01:32 America/Chicago] PHP Fatal error:  Call to undefined function messagges() in /home/appnet/public_html/appnet/application/controllers/super_admin/Login.php on line 146
+[14-Feb-2017 22:16:29 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/controllers/super_admin/Usuarios.php on line 132
+[14-Feb-2017 22:17:07 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/controllers/super_admin/Usuarios.php on line 132
+[15-Feb-2017 12:54:51 America/Chicago] PHP Parse error:  syntax error, unexpected '=', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 21
+[15-Feb-2017 12:55:06 America/Chicago] PHP Parse error:  syntax error, unexpected '=', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 21
+[15-Feb-2017 12:55:14 America/Chicago] PHP Parse error:  syntax error, unexpected '=', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 21
+[15-Feb-2017 12:55:25 America/Chicago] PHP Parse error:  syntax error, unexpected '=', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 21
+[15-Feb-2017 12:55:41 America/Chicago] PHP Fatal error:  Trait 'Carbon\Carbon' not found in /home/appnet/public_html/appnet/application/controllers/admin/Login.php on line 3
+[15-Feb-2017 14:36:15 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/appnet/application/controllers/super_admin/Sucursal.php on line 234
+[15-Feb-2017 16:41:37 America/Chicago] PHP Fatal error:  Call to undefined method CI_Session::setUserdata() in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 53
+[15-Feb-2017 16:41:47 America/Chicago] PHP Fatal error:  Call to undefined method CI_Session::set_serdata() in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 53
+[15-Feb-2017 16:46:46 America/Chicago] PHP Parse error:  syntax error, unexpected ''./public/admin/img_user/'' (T_CONSTANT_ENCAPSED_STRING) in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 36
+[15-Feb-2017 16:46:47 America/Chicago] PHP Parse error:  syntax error, unexpected ''./public/admin/img_user/'' (T_CONSTANT_ENCAPSED_STRING) in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 36
+[15-Feb-2017 16:55:05 America/Chicago] PHP Parse error:  syntax error, unexpected '$config' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 39
+[15-Feb-2017 16:55:07 America/Chicago] PHP Parse error:  syntax error, unexpected '$config' (T_VARIABLE) in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 39
+[15-Feb-2017 18:03:30 America/Chicago] PHP Parse error:  syntax error, unexpected '$i' (T_VARIABLE) in /home/appnet/public_html/appnet/application/views/admin/index/index.php on line 59
+[15-Feb-2017 18:03:32 America/Chicago] PHP Parse error:  syntax error, unexpected '$i' (T_VARIABLE) in /home/appnet/public_html/appnet/application/views/admin/index/index.php on line 59
+[15-Feb-2017 18:37:01 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/appnet/public_html/appnet/application/models/Usuario_model.php on line 61
+[15-Feb-2017 19:03:15 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/helpers/util_helper.php on line 23
+[15-Feb-2017 19:03:16 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/helpers/util_helper.php on line 23
+[15-Feb-2017 19:03:40 America/Chicago] PHP Fatal error:  Call to undefined function size_folder() in /home/appnet/public_html/appnet/application/views/admin/index/index.php on line 93
+[15-Feb-2017 19:27:16 America/Chicago] PHP Fatal error:  Class 'Carbon' not found in /home/appnet/public_html/appnet/application/views/admin/index/index.php on line 38
+[15-Feb-2017 19:31:48 America/Chicago] PHP Fatal error:  Call to a member function format() on a non-object in /home/appnet/public_html/appnet/application/third_party/Carbon/Carbon.php on line 307
+[15-Feb-2017 19:32:01 America/Chicago] PHP Fatal error:  Call to undefined method Carbon\Carbon::date() in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 69
+[15-Feb-2017 20:05:12 America/Chicago] PHP Fatal error:  Call to undefined method Index::form_validation() in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 49
+[15-Feb-2017 20:05:43 America/Chicago] PHP Fatal error:  Call to undefined method Index::form_validation() in /home/appnet/public_html/appnet/application/controllers/admin/Index.php on line 49
+[15-Feb-2017 20:50:54 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/appnet/public_html/appnet/application/views/admin/index/index.php on line 105
+[15-Feb-2017 20:51:10 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/appnet/public_html/appnet/application/views/admin/index/index.php on line 105
+[15-Feb-2017 20:51:11 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/appnet/public_html/appnet/application/views/admin/index/index.php on line 105
+[15-Feb-2017 21:01:25 America/Chicago] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 14
+[15-Feb-2017 21:01:33 America/Chicago] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 14
+[15-Feb-2017 21:01:46 America/Chicago] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 14
+[15-Feb-2017 21:02:08 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 21
+[15-Feb-2017 21:02:14 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 21
+[15-Feb-2017 21:02:15 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 21
+[15-Feb-2017 21:02:25 America/Chicago] PHP Fatal error:  Call to a member function view() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 21
+[16-Feb-2017 09:13:38 America/Chicago] PHP Fatal error:  Call to a member function get_config_sucursal() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 26
+[16-Feb-2017 09:14:09 America/Chicago] PHP Fatal error:  Call to a member function get_config_sucursal() on a non-object in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 26
+[16-Feb-2017 12:32:03 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 12:32:04 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 12:32:29 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 12:32:41 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 12:32:43 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 12:32:44 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 12:32:48 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 12:32:50 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 12:32:52 America/Chicago] PHP Fatal error:  Cannot redeclare Config_model::get_config_sucursal() in /home/appnet/public_html/appnet/application/models/Config_model.php on line 18
+[16-Feb-2017 13:49:51 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/appnet/public_html/appnet/application/views/admin/config/config.php on line 34
+[16-Feb-2017 13:49:59 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/appnet/public_html/appnet/application/views/admin/config/config.php on line 34
+[16-Feb-2017 13:50:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/appnet/public_html/appnet/application/views/admin/config/config.php on line 34
+[16-Feb-2017 16:56:13 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 67
+[16-Feb-2017 17:59:39 America/Chicago] PHP Fatal error:  Call to undefined method Config_model::update_conf_suc() in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 86
+[16-Feb-2017 18:14:46 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 47
+[16-Feb-2017 18:32:01 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 46
+[16-Feb-2017 19:18:26 America/Chicago] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) in /home/appnet/public_html/appnet/application/controllers/1.php on line 1
+[16-Feb-2017 19:18:58 America/Chicago] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) in /home/appnet/public_html/appnet/application/controllers/1.php on line 1
+[16-Feb-2017 19:19:05 America/Chicago] PHP Fatal error:  Call to undefined method Template_model::get_sucursal() in /home/appnet/public_html/appnet/application/controllers/Punto_app.php on line 10
+[16-Feb-2017 19:19:07 America/Chicago] PHP Fatal error:  Call to undefined method Template_model::get_sucursal() in /home/appnet/public_html/appnet/application/controllers/Punto_app.php on line 10
+[16-Feb-2017 19:19:22 America/Chicago] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) in /home/appnet/public_html/appnet/application/controllers/1.php on line 1
+[16-Feb-2017 19:20:09 America/Chicago] PHP Fatal error:  Call to undefined method Template_model::get_sucursal() in /home/appnet/public_html/appnet/application/controllers/Punto_app.php on line 10
+[16-Feb-2017 19:20:29 America/Chicago] PHP Fatal error:  Call to undefined method Template_model::get_sucursal() in /home/appnet/public_html/appnet/application/controllers/Punto_app.php on line 10
+[16-Feb-2017 19:54:50 America/Chicago] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER) in /home/appnet/public_html/appnet/application/models/Config_model.php on line 43
+[16-Feb-2017 19:54:53 America/Chicago] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER) in /home/appnet/public_html/appnet/application/models/Config_model.php on line 43
+[16-Feb-2017 20:30:48 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 73
+[16-Feb-2017 20:30:51 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 73
+[16-Feb-2017 20:31:12 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 73
+[16-Feb-2017 23:44:41 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/appnet/application/controllers/admin/Config.php on line 49
+[17-Feb-2017 00:20:27 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/appnet/application/models/Config_model.php on line 47
+[17-Feb-2017 00:20:59 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/appnet/application/models/Config_model.php on line 47
+[17-Feb-2017 00:21:44 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/appnet/application/models/Config_model.php on line 47
+[17-Feb-2017 00:22:09 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/appnet/application/models/Config_model.php on line 47
+[17-Feb-2017 00:22:26 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/appnet/application/models/Config_model.php on line 37
+[20-Feb-2017 14:24:59 America/Chicago] PHP Parse error:  syntax error, unexpected ''standardize_newli' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/appnet/application/config/config.php on line 421
+[20-Feb-2017 14:24:59 America/Chicago] PHP Parse error:  syntax error, unexpected ''standardize_newli' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/appnet/application/config/config.php on line 421
+[20-Feb-2017 14:25:02 America/Chicago] PHP Parse error:  syntax error, unexpected ''standardize_newli' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/appnet/application/config/config.php on line 421
+[20-Feb-2017 14:25:02 America/Chicago] PHP Parse error:  syntax error, unexpected ''standardize_newli' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/appnet/application/config/config.php on line 421
+[20-Feb-2017 14:25:09 America/Chicago] PHP Parse error:  syntax error, unexpected ''standardize_newli' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/appnet/application/config/config.php on line 421
+[20-Feb-2017 14:25:09 America/Chicago] PHP Parse error:  syntax error, unexpected ''standardize_newli' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/appnet/application/config/config.php on line 421
+[20-Feb-2017 14:25:12 America/Chicago] PHP Parse error:  syntax error, unexpected ''standardize_newli' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/appnet/application/config/config.php on line 421
+[20-Feb-2017 14:25:12 America/Chicago] PHP Parse error:  syntax error, unexpected ''standardize_newli' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/appnet/application/config/config.php on line 421
+[20-Feb-2017 15:22:02 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/config/config.php on line 421
+[20-Feb-2017 15:22:02 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/config/config.php on line 421
+[20-Feb-2017 15:22:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/config/config.php on line 421
+[20-Feb-2017 15:22:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/config/config.php on line 421
+[20-Feb-2017 15:22:18 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/config/config.php on line 421
+[20-Feb-2017 15:22:18 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/config/config.php on line 421
+[20-Feb-2017 19:45:45 America/Chicago] PHP Fatal error:  Call to a member function row() on a non-object in /home/appnet/public_html/application/models/Config_model.php on line 34
+[20-Feb-2017 20:26:59 America/Chicago] PHP Parse error:  syntax error, unexpected '$sucursal' (T_VARIABLE), expecting ',' or ';' in /home/appnet/public_html/application/views/admin/config/editar.php on line 51
+[20-Feb-2017 21:07:54 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/appnet/public_html/application/controllers/admin/Config.php on line 345
+[21-Feb-2017 11:35:49 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/appnet/public_html/application/views/templates/basico_1.php on line 94
+[21-Feb-2017 11:36:05 America/Chicago] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/appnet/public_html/application/views/templates/basico_1.php on line 94
+[21-Feb-2017 11:59:42 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/views/admin/config/config.php on line 161
+[21-Feb-2017 11:59:46 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/appnet/public_html/application/views/admin/config/config.php on line 84
+[21-Feb-2017 14:01:23 America/Chicago] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 99
+[21-Feb-2017 14:01:26 America/Chicago] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 99
+[21-Feb-2017 14:01:28 America/Chicago] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 99
+[21-Feb-2017 14:01:29 America/Chicago] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 99
+[21-Feb-2017 14:01:32 America/Chicago] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 99
+[21-Feb-2017 14:02:23 America/Chicago] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 99
+[21-Feb-2017 14:02:34 America/Chicago] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 99
+[21-Feb-2017 14:03:24 America/Chicago] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 99
+[21-Feb-2017 14:13:35 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 354
+[21-Feb-2017 14:13:39 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 354
+[21-Feb-2017 14:59:01 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 345
+[21-Feb-2017 14:59:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 345
+[21-Feb-2017 15:13:11 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 339
+[21-Feb-2017 19:16:01 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 19:17:21 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 19:17:23 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 19:17:25 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 19:17:33 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 19:57:37 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ':' in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 130
+[21-Feb-2017 19:57:41 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ':' in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 130
+[21-Feb-2017 19:57:48 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ':' in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 130
+[21-Feb-2017 19:58:00 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ':' in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 130
+[21-Feb-2017 19:58:18 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ':' in /home/appnet/public_html/application/views/admin/config/config_slides.php on line 130
+[21-Feb-2017 20:11:21 America/Chicago] PHP Parse error:  syntax error, unexpected ''Diapositiva creada exitos' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 334
+[21-Feb-2017 20:11:23 America/Chicago] PHP Parse error:  syntax error, unexpected ''Diapositiva creada exitos' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 334
+[21-Feb-2017 20:11:28 America/Chicago] PHP Parse error:  syntax error, unexpected ''Diapositiva creada exitos' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 334
+[21-Feb-2017 20:12:51 America/Chicago] PHP Fatal error:  Call to a member function row() on a non-object in /home/appnet/public_html/application/models/Config_model.php on line 83
+[21-Feb-2017 20:12:55 America/Chicago] PHP Fatal error:  Call to a member function row() on a non-object in /home/appnet/public_html/application/models/Config_model.php on line 83
+[21-Feb-2017 20:36:57 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/application/views/templates/video_1.php on line 66
+[21-Feb-2017 20:37:01 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/appnet/public_html/application/views/templates/video_1.php on line 66
+[21-Feb-2017 20:49:56 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 335
+[21-Feb-2017 20:57:30 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 335
+[21-Feb-2017 22:13:16 America/Chicago] PHP Parse error:  syntax error, unexpected ''Dia' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 22:13:21 America/Chicago] PHP Parse error:  syntax error, unexpected ''Dia' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 22:13:23 America/Chicago] PHP Parse error:  syntax error, unexpected ''Dia' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 22:13:29 America/Chicago] PHP Parse error:  syntax error, unexpected ''Dia' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 22:13:30 America/Chicago] PHP Parse error:  syntax error, unexpected ''Dia' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[21-Feb-2017 22:13:37 America/Chicago] PHP Parse error:  syntax error, unexpected ''Dia' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[23-Feb-2017 20:14:59 America/Chicago] PHP Fatal error:  Call to undefined method Empresa_model::get_sucursales() in /home/appnet/public_html/application/controllers/super_admin/Empresa.php on line 105
+[23-Feb-2017 20:15:55 America/Chicago] PHP Fatal error:  Call to undefined method Empresa_model::get_sucursales() in /home/appnet/public_html/application/controllers/super_admin/Empresa.php on line 105
+[23-Feb-2017 20:16:03 America/Chicago] PHP Fatal error:  Call to undefined method Empresa_model::get_sucursales() in /home/appnet/public_html/application/controllers/super_admin/Empresa.php on line 105
+[23-Feb-2017 20:16:19 America/Chicago] PHP Fatal error:  Call to undefined method Empresa_model::get_sucursales() in /home/appnet/public_html/application/controllers/super_admin/Empresa.php on line 105
+[23-Feb-2017 20:16:56 America/Chicago] PHP Fatal error:  Call to undefined method Empresa_model::get_sucursales() in /home/appnet/public_html/application/controllers/super_admin/Empresa.php on line 105
+[23-Feb-2017 20:17:56 America/Chicago] PHP Fatal error:  Call to undefined method Empresa_model::get_sucursales() in /home/appnet/public_html/application/controllers/super_admin/Empresa.php on line 105
+[23-Feb-2017 20:18:21 America/Chicago] PHP Fatal error:  Call to undefined method Empresa_model::get_sucursales() in /home/appnet/public_html/application/controllers/super_admin/Empresa.php on line 105
+[23-Feb-2017 20:39:34 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or '$' in /home/appnet/public_html/application/controllers/admin/Config.php on line 335
+[23-Feb-2017 20:39:36 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or '$' in /home/appnet/public_html/application/controllers/admin/Config.php on line 335
+[23-Feb-2017 20:40:11 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 334
+[23-Feb-2017 20:40:13 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 334
+[23-Feb-2017 20:40:50 America/Chicago] PHP Parse error:  syntax error, unexpected ''file_' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/appnet/public_html/application/controllers/admin/Config.php on line 334
+[27-Feb-2017 15:31:59 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 15:32:02 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 15:32:04 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 15:32:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 15:32:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 15:32:07 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 19:50:33 America/Chicago] PHP Parse error:  syntax error, unexpected ''gi' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 19:52:24 America/Chicago] PHP Parse error:  syntax error, unexpected ''gi' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 19:54:21 America/Chicago] PHP Parse error:  syntax error, unexpected ''gi' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 19:54:26 America/Chicago] PHP Parse error:  syntax error, unexpected ''gi' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 19:54:46 America/Chicago] PHP Parse error:  syntax error, unexpected ''gi' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 333
+[27-Feb-2017 20:06:35 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[27-Feb-2017 20:06:38 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[02-Mar-2017 10:55:44 America/Chicago] PHP Warning:  POST Content-Length of 15914090 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[03-Mar-2017 15:06:51 America/Chicago] PHP Parse error:  syntax error, unexpected ''./public' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[03-Mar-2017 15:09:39 America/Chicago] PHP Parse error:  syntax error, unexpected ''gif|jpg|png|jpeg|sv' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[03-Mar-2017 15:20:06 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[03-Mar-2017 15:20:07 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[03-Mar-2017 15:20:09 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[03-Mar-2017 15:20:10 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[03-Mar-2017 15:20:12 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[03-Mar-2017 15:20:26 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[03-Mar-2017 15:20:28 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 337
+[03-Mar-2017 16:10:30 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[03-Mar-2017 16:10:38 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 336
+[03-Mar-2017 16:21:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 334
+[03-Mar-2017 16:21:11 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 334
+[03-Mar-2017 17:12:03 America/Chicago] PHP Parse error:  syntax error, unexpected 'required' (T_STRING) in /home/appnet/public_html/application/controllers/admin/Config.php on line 96
+[03-Mar-2017 17:12:03 America/Chicago] PHP Parse error:  syntax error, unexpected 'required' (T_STRING) in /home/appnet/public_html/application/controllers/admin/Config.php on line 96
+[03-Mar-2017 17:13:50 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 325
+[03-Mar-2017 17:13:51 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 325
+[03-Mar-2017 17:14:50 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 325
+[03-Mar-2017 17:14:52 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 325
+[03-Mar-2017 17:14:55 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 325
+[03-Mar-2017 17:14:58 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 325
+[03-Mar-2017 17:15:01 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 325
+[03-Mar-2017 17:38:11 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 313
+[03-Mar-2017 17:38:18 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 313
+[03-Mar-2017 17:38:22 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 313
+[03-Mar-2017 17:41:43 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 313
+[03-Mar-2017 17:57:02 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/appnet/public_html/application/controllers/admin/Config.php on line 313
+[03-Mar-2017 19:44:17 America/Chicago] PHP Parse error:  syntax error, unexpected ''<div class="label label-dange' (T_ENCAPSED_AND_WHITESPACE) in /home/appnet/public_html/application/views/admin/config/config.php on line 119

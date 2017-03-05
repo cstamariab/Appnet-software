@@ -11,7 +11,6 @@ Que es AppNet Software
 Tecnologias utilizadas
 ***************
 
-
   Php , Codeigniter Framework , HTML , CSS3 , Bootstrap, WOW.transitions .
 
 

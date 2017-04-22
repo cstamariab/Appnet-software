@@ -8,7 +8,7 @@ class Config_model extends CI_Model {
 
   public function get_config_sucursal($id_sucursal)
   {
-    $query = $this->db->query("SELECT suc_conf.id,suc_conf.logo,suc_conf.titulo,suc_conf.img_fondo,suc_conf.activa_logo, suc_conf.color_titulo,suc_conf.size_titulo FROM tbl_sucursal_config as suc_conf WHERE id_sucursal = $id_sucursal");
+    $query = $this->db->query("SELECT suc_conf.id,suc_conf.logo,suc_conf.titulo,suc_conf.img_fondo,suc_conf.activa_logo, suc_conf.color_titulo,suc_conf.size_titulo,suc_conf.pos_logo,fo.propiedad_css as font_titulo FROM tbl_sucursal_config as suc_conf left outer JOIN utl_fonts fo ON fo.id = suc_conf.font_titulo WHERE id_sucursal = $id_sucursal");
     if ($query->num_rows > 0) {
       return $query->row();
     }else{
@@ -57,7 +57,7 @@ class Config_model extends CI_Model {
   }
   public function get_slides_sucursal($id_sucursal)
   {
-    $sql = "SELECT id,nombre,posicion,titulo,descripcion,precio,img_slide,img_fondo,activa_precio,activa_iva,activa_titulo,activa_descripcion,estado,logo_estado_prod as logo_prod,color_titulo,color_desc,color_precio,size_titulo,size_desc,size_precio FROM tbl_sucursal_slides WHERE id_sucursal = $id_sucursal and estado = 1 ORDER BY posicion ASC";
+    $sql = "SELECT id,nombre,posicion,titulo,descripcion,precio,img_slide,img_fondo,activa_precio,activa_iva,activa_titulo,activa_descripcion,activa_img,activa_marco_desc,color_marco_desc,estado,logo_estado_prod as logo_prod,color_titulo,color_desc,color_precio,size_titulo,size_desc,size_precio FROM tbl_sucursal_slides WHERE id_sucursal = $id_sucursal and estado = 1 ORDER BY posicion ASC";
 
     $query = $this->db->query($sql);
     if ($query->num_rows > 0) {
@@ -68,7 +68,7 @@ class Config_model extends CI_Model {
   }
   public function get_slides_sucursal_($id_sucursal)
   {
-    $sql = "SELECT id,nombre,posicion,titulo,descripcion,precio,img_slide,img_fondo,activa_precio,activa_iva,activa_titulo,activa_descripcion,estado FROM tbl_sucursal_slides WHERE id_sucursal = $id_sucursal  ORDER BY posicion ASC";
+    $sql = "SELECT id,nombre,posicion,titulo,descripcion,precio,img_slide,img_fondo,activa_precio,activa_iva,activa_titulo,activa_descripcion,activa_img,activa_marco_desc,estado,color_marco_desc FROM tbl_sucursal_slides WHERE id_sucursal = $id_sucursal  ORDER BY posicion ASC";
 
     $query = $this->db->query($sql);
     if ($query->num_rows > 0) {
@@ -85,15 +85,52 @@ class Config_model extends CI_Model {
     $query = $this->db->query($sql2);
     return true;
   }
+  public function update_fonts_slide($id_slide,$font_titulo,$font_desc,$font_precio)
+  {
+    $sql = "UPDATE tbl_slides_fonts set font_titulo = '$font_titulo' , font_desc = '$font_desc'
+    , font_precio = '$font_precio' WHERE id_slide = $id_slide";
+
+    $query = $this->db->query($sql);
+    return true;
+  }
   public function get_slide($id_slide)
   {
-     $sql = "SELECT * FROM tbl_sucursal_slides WHERE id = $id_slide";
-     $query = $this->db->query($sql);
-     if ($query->num_rows > 0) {
-       return $query->row();
-     }else{
-       return FAlSE;
-     }
+    $sql = "SELECT * FROM tbl_sucursal_slides WHERE id = $id_slide";
+    $query = $this->db->query($sql);
+    if ($query->num_rows > 0) {
+      return $query->row();
+    }else{
+      return FAlSE;
+    }
+  }
+  public function get_conf_fonts($id_slide)
+  {
+    $sql = "SELECT * FROM tbl_slides_fonts WHERE id_slide = $id_slide";
+    $query = $this->db->query($sql);
+    if ($query->num_rows > 0) {
+      return $query->row();
+    }else{
+      return FAlSE;
+    }
+  }
+
+  public function get_conf_fonts_text($id_slide)
+  {
+    $sql = "SELECT fon.propiedad_css as prop_titulo ,
+    fon2.propiedad_css as prop_desc ,
+    fon3.propiedad_css as prop_precio
+    FROM tbl_slides_fonts as slfont
+    LEFT OUTER JOIN utl_fonts fon ON fon.id = slfont.font_titulo
+    LEFT OUTER JOIN utl_fonts fon2 ON fon2.id = slfont.font_desc
+    LEFT OUTER JOIN utl_fonts fon3 ON fon3.id = slfont.font_precio
+    WHERE id_slide = $id_slide;";
+
+    $query = $this->db->query($sql);
+    if ($query->num_rows > 0) {
+      return $query->row();
+    }else{
+      return FAlSE;
+    }
   }
   public function get_cant_slides($id_sucursal)
   {
@@ -108,27 +145,27 @@ class Config_model extends CI_Model {
   public function select_diapositivas($id_sucursal)
   {
     $sql = "SELECT count(*) as cantidad FROM tbl_sucursal_slides WHERE id_sucursal = $id_sucursal";
-     $query = $this->db->query($sql);
-     if ($query->num_rows > 0) {
-       return $query->row()->cantidad;
-     }else{
-       return FAlSE;
-     }
+    $query = $this->db->query($sql);
+    if ($query->num_rows > 0) {
+      return $query->row()->cantidad;
+    }else{
+      return FAlSE;
+    }
   }
-  public function update_slide($id,$nombre,$titulo,$descripcion,$posicion,$precio,$img_url,$img_fondo,$logo_prod,$proveedor,$link,$color_titulo,$color_desc,$color_precio,$size_titulo,$size_desc,$size_precio)
+  public function update_slide($id,$nombre,$titulo,$descripcion,$posicion,$precio,$img_url,$img_fondo,$logo_prod,$proveedor,$link,$color_titulo,$color_desc,$color_precio,$size_titulo,$size_desc,$size_precio,$color_marco_desc)
   {
     $sql = "UPDATE tbl_sucursal_slides set img_fondo = '$img_fondo',nombre = '$nombre', titulo = '$titulo',
     descripcion = '$descripcion',posicion = '$posicion',precio='$precio',
     img_slide='$img_url',logo_estado_prod = '$logo_prod',proveedor_video = '$proveedor',
     link_video = '$link' , color_titulo = '$color_titulo', color_desc = '$color_desc' , color_precio = '$color_precio',
-    size_titulo = $size_titulo,size_desc = $size_desc, size_precio = $size_precio WHERE id = $id";
+    size_titulo = $size_titulo,size_desc = $size_desc, size_precio = $size_precio , color_marco_desc = '$color_marco_desc' WHERE id = $id";
 
-     $query = $this->db->query($sql);
+    $query = $this->db->query($sql);
   }
   public function delete_slide($id)
   {
     $sql = "SELECT sl.id_sucursal,su.ruta,img_slide FROM tbl_sucursal_slides sl INNER JOIN tbl_sucursal su ON su.id = sl.id_sucursal
-     WHERE sl.id = $id";
+    WHERE sl.id = $id";
     $query = $this->db->query($sql);
     $datos = $query->row();
     $sql2 = "DELETE FROM tbl_sucursal_slides WHERE id = $id";
@@ -150,6 +187,13 @@ class Config_model extends CI_Model {
       case 'activa_descripcion':
       $propiedad_ = 'activa_descripcion = '.$estado;
       break;
+      case 'activa_img':
+      $propiedad_ = 'activa_img = '.$estado;
+      break;
+      case 'activa_marco_desc':
+      $propiedad_ = 'activa_marco_desc = '.$estado;
+      break;
+
       case 'estado':
       $propiedad_ = 'estado = '.$estado;
       break;
@@ -244,10 +288,25 @@ class Config_model extends CI_Model {
       return FAlSE;
     }
   }
-
-  public function update_conf_suc($id_sucursal,$logo_url,$banner_url,$img_fondo_url,$activa_logo,$color_titulo,$size_titulo)
+  public function selectSlides()
   {
-    $sql = "UPDATE tbl_sucursal_config SET logo = '$logo_url',titulo = '$banner_url',img_fondo ='$img_fondo_url',activa_logo = $activa_logo , color_titulo = '$color_titulo',size_titulo = '$size_titulo' WHERE id_sucursal =$id_sucursal";
+    $query = $this->db->query("SELECT id FROM tbl_sucursal_slides ");
+    if ($query->num_rows > 0) {
+      return $query->result();
+    }else{
+      return FAlSE;
+    }
+  }
+  public function insert_fonts($id)
+  {
+    $sql2 = "INSERT into tbl_slides_fonts (id_slide) VALUES('$id')";
+    $this->db->simple_query($sql2);
+    return TRUE;
+  }
+
+  public function update_conf_suc($id_sucursal,$logo_url,$banner_url,$img_fondo_url,$activa_logo,$color_titulo,$size_titulo,$pos_logo,$font_titulo)
+  {
+    $sql = "UPDATE tbl_sucursal_config SET logo = '$logo_url',titulo = '$banner_url',img_fondo ='$img_fondo_url',activa_logo = $activa_logo , color_titulo = '$color_titulo',size_titulo = '$size_titulo',pos_logo = '$pos_logo' ,font_titulo = '$font_titulo' WHERE id_sucursal =$id_sucursal";
 
     $this->db->simple_query($sql);
     return TRUE;
@@ -264,13 +323,23 @@ class Config_model extends CI_Model {
     $this->db->simple_query($sql);
     return TRUE;
   }
-  public function insert_slide($id_sucursal,$nombre,$titulo,$descripcion,$posicion,$precio,$img_url,$activa_titulo,$activa_desc,$activa_precio,$activa_iva,$estado,$img_fondo,$logo_url,$proveedor,$link,$color_titulo,$color_desc,$color_precio,$size_titulo,$size_desc,$size_precio)
+  public function insert_fonts_slide($id_slide,$font_titulo,$font_desc,$font_precio)
   {
-    $sql = "INSERT INTO tbl_sucursal_slides (id_sucursal,nombre,titulo,descripcion,posicion,precio,img_slide,activa_titulo,activa_descripcion,activa_precio,activa_iva,estado,img_fondo,logo_estado_prod,proveedor_video,link_video,color_titulo,color_desc,color_precio,size_titulo,size_desc,size_precio)
-    VALUES($id_sucursal,'$nombre','$titulo','$descripcion','$posicion','$precio','$img_url','$activa_titulo','$activa_desc','$activa_precio','$activa_iva','$estado','$img_fondo','$logo_url','$proveedor','$link','$color_titulo','$color_desc','$color_precio','$size_titulo','$size_desc','$size_precio')";
+    $sql = "INSERT INTO tbl_slides_fonts(id_slide,font_titulo,font_desc,font_precio)
+    VALUES($id_slide,'$font_titulo','$font_desc','$font_precio')";
+    $this->db->simple_query($sql);
+    return TRUE;
+  }
+  public function insert_slide($id_sucursal,$nombre,$titulo,$descripcion,$posicion,$precio,$img_url,$activa_titulo,$activa_desc,$activa_precio,$activa_iva,$activa_img,$activa_marco_desc,$color_marco_desc,$estado,$img_fondo,$logo_url,$proveedor,$link,$color_titulo,$color_desc,$color_precio,$size_titulo,$size_desc,$size_precio)
+  {
+    $sql = "INSERT INTO tbl_sucursal_slides (id_sucursal,nombre,titulo,descripcion,posicion,precio,img_slide,activa_titulo,activa_descripcion,activa_precio,activa_iva,activa_img,activa_marco_desc,color_marco_desc,estado,img_fondo,logo_estado_prod,proveedor_video,link_video,color_titulo,color_desc,color_precio,size_titulo,size_desc,size_precio)
+    VALUES($id_sucursal,'$nombre','$titulo','$descripcion','$posicion','$precio','$img_url','$activa_titulo','$activa_desc','$activa_precio','$activa_iva','$activa_img','$activa_marco_desc','$color_marco_desc','$estado','$img_fondo','$logo_url','$proveedor','$link','$color_titulo','$color_desc','$color_precio','$size_titulo','$size_desc','$size_precio')";
     $sql2 = "UPDATE tbl_sucursal_slides set estado = 0 WHERE id_sucursal = $id_sucursal and link_video <> ''";
     $this->db->simple_query($sql);
+    $inserted = $this->db->insert_id();
     $this->db->simple_query($sql2);
+
+    return $inserted;
   }
 
 }

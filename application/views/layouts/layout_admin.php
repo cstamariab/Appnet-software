@@ -167,6 +167,19 @@
                 <li class="<?php if($uri_segment =='administrador/listado'){echo 'active';}?>"><a href="<?php echo base_url()."super_admin/administrador/listado" ?>"><i class="fa fa-circle-o"></i>Listado</a></li>
               </ul>
             </li>
+            <li class="<?php if($uri =='fonts'){echo 'active';}?> treeview">
+              <a href="#">
+                <i class="fa fa-font"></i>
+                <span>Fonts</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li class="<?php if($uri_segment =='fonts/nuevo'){echo 'active';}?>"><a href="<?php echo base_url()."super_admin/fonts/nuevo" ?>"><i class="fa fa-circle-o"></i>Crear Font</a></li>
+                <li class="<?php if($uri_segment =='fonts/listado'){echo 'active';}?>"><a href="<?php echo base_url()."super_admin/fonts/listado" ?>"><i class="fa fa-circle-o"></i>Listado</a></li>
+              </ul>
+            </li>
 
           </ul>
         </section>

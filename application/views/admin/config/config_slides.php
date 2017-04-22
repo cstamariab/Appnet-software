@@ -21,6 +21,7 @@ img.resize{
   </h1>
   <ol class="breadcrumb">
     <li><a href="<?= base_url()."admin"?>"><i class="fa fa-dashboard"></i> Inicio</a></li>
+    <li><a href="<?= base_url()."admin/config"?>"><i class="fa fa-dashboard"></i> Listado Sucursales</a></li>
     <li class="active">Configurar Diapositivas</li>
   </ol>
 </section>
@@ -30,22 +31,20 @@ img.resize{
   <!-- /.row -->
   <?php $cantidad_slides = $this->config_model->get_cant_slides($sucursal->id); ?>
   <div class="row">
-
-
     <div class="box box-primary">
       <div class="box-header with-border">
         <?php switch ($sucursal->id_template) {
-          case '1':
+          case '1': // BASICO_1
           $nuevo = 'nuevo_slide';
           $editar = "editar_slide";
 
           break;
-          case '2': case '3':
+          case '2': case '3': //BASICO_2_H y BASICO_2_V
           $nuevo = 'nuevo_slide_tmp_2';
           $editar = "editar_slide_tmp_2";
 
           break;
-          case '4':
+          case '4': // basico_3
           $nuevo = 'nuevo_slide_tmp_3';
           $editar = "editar_slide_tmp_3";
 
@@ -73,8 +72,10 @@ img.resize{
                 <th class="text-center">Id</th>
                 <th class="text-center">Nombre Diapositiva</th>
                 <th class="text-center">Titulo Item</th>
+                <th class="text-center">Marco Desc</th>
                 <th class="text-center">Desc. Item</th>
                 <th class="text-center">Precio Item</th>
+                <th class="text-center">Imagen Item</th>
                 <th class="text-center">+Iva Item</th>
                 <th class="text-center">Posicion Diapositiva</th>
                 <th class="text-center">Estado</th>
@@ -94,6 +95,13 @@ img.resize{
                     <?php endif; ?>
                   </td>
                   <td class="text-center">
+                    <?php if ($img->activa_marco_desc == 1): ?>
+                      <button type="button" title="Desactivar" onclick="activar_prop(<?php echo $img->id ?>,'activa_marco_desc','0')" class="btn btn-md btn-success" name="button"><i class="ion ion-checkmark-round"></i></button>
+                    <?php else: ?>
+                      <button type="button" title="Activar" onclick="activar_prop(<?php echo $img->id ?>,'activa_marco_desc','1')" class="btn btn-md btn-danger" name="button"><i class="ion ion-ios-close-outline"></i></button>
+                    <?php endif; ?>
+                  </td>
+                  <td class="text-center">
                     <?php if ($img->activa_descripcion == 1): ?>
                       <button type="button" title="Desactivar" onclick="activar_prop(<?php echo $img->id ?>,'activa_descripcion','0')" class="btn btn-md btn-success" name="button"><i class="ion ion-checkmark-round"></i></button>
                     <?php else: ?>
@@ -105,6 +113,13 @@ img.resize{
                       <button type="button" title="Desactivar" onclick="activar_prop(<?php echo $img->id ?>,'activa_precio','0')" class="btn btn-md btn-success" name="button"><i class="ion ion-checkmark-round"></i></button>
                     <?php else: ?>
                       <button type="button" title="Activar" onclick="activar_prop(<?php echo $img->id ?>,'activa_precio','1')" class="btn btn-md btn-danger" name="button"><i class="ion ion-ios-close-outline"></i></button>
+                    <?php endif; ?>
+                  </td>
+                  <td class="text-center">
+                    <?php if ($img->activa_img == 1): ?>
+                      <button type="button" title="Desactivar" onclick="activar_prop(<?php echo $img->id ?>,'activa_img','0')" class="btn btn-md btn-success" name="button"><i class="ion ion-checkmark-round"></i></button>
+                    <?php else: ?>
+                      <button type="button" title="Activar" onclick="activar_prop(<?php echo $img->id ?>,'activa_img','1')" class="btn btn-md btn-danger" name="button"><i class="ion ion-ios-close-outline"></i></button>
                     <?php endif; ?>
                   </td>
                   <td class="text-center">

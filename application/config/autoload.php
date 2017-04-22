@@ -132,5 +132,6 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('utl_model','empresa_model','login_model','template_model','sucursal_model','usuario_model','admin_model','config_model');
+$autoload['model'] = array('utl_model','empresa_model','login_model'
+,'template_model','sucursal_model','usuario_model','admin_model','config_model','font_model');
 include APPPATH . 'third_party/Carbon/Carbon.php';

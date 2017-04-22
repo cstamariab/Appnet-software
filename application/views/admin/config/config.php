@@ -1,3 +1,15 @@
+<!-- Input addon -->
+<?php foreach ($fonts as $fo): ?>
+  <?php echo "<".$fo->link_html.">" ?>
+<?php endforeach; ?>
+<style media="screen">
+<?php $i= 0;foreach ($fonts as $fo): ?>
+  .<?php echo "font_".$i ?>{
+    <?php echo $fo->propiedad_css ?>
+    font-size: 30px;
+  }
+<?php $i++; endforeach; ?>
+</style>
 <style media="screen">
 .gallery
 {
@@ -15,19 +27,20 @@ img.resize{
 </style>
 <section class="content-header">
   <h1>
-    Configuracion Cabecera Sucursal
+    Configuracion Cabecera Plantilla
 
   </h1>
   <ol class="breadcrumb">
     <li><a href="<?= base_url()."admin"?>"><i class="fa fa-dashboard"></i> Inicio</a></li>
-    <li class="active">Configurar Sucursal</li>
+    <li><a href="<?= base_url()."admin/config"?>"><i class="fa fa-dashboard"></i> Listado Sucursales</a></li>
+    <li class="active">Configurar Plantilla</li>
   </ol>
 </section>
 <section class="content">
   <div class="row">
     <div class="box box-primary">
       <div class="box-header with-border">
-        <h3 class="box-title">Template</h3>
+        <h3 class="box-title">Plantilla</h3>
       </div>
       <div class="box-body">
         <div class="row">
@@ -75,8 +88,19 @@ img.resize{
                 <input type="checkbox" name="activa_logo" <?php if ($conf->activa_logo == 1) {echo "checked";}?> >
               </div>
             </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Posicion Logo</label>
+                <select class="form-control" name="pos_logo">
+                  <option value="pull-right" <?php if ($conf->pos_logo =="pull-right"): echo "selected"; endif; ?>>Derecha</option>
+                  <option value="pull-left" <?php if ($conf->pos_logo =="pull-left"): echo "selected"; endif; ?>>Izquierda</option>
+                  <option value="center-block" <?php if ($conf->pos_logo =="center-block"): echo "selected"; endif; ?>>Centro</option>
+                </select>
+              </div>
+            </div>
             <input type="hidden" name="color_titulo" value="">
             <input type="hidden" name="size_titulo" value="">
+            <input type="hidden" name="font_titulo" value="">
             <input style="display:none;" type="file" name="banner"  />
             <!-- <div class="col-md-6">
             <div class="form-group text-center">
@@ -108,6 +132,7 @@ img.resize{
           </div>
 
         </div>
+
         <div class="col-md-6">
           <div class="form-group">
             <label>Color titulo </label>
@@ -120,14 +145,39 @@ img.resize{
 
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="form-group">
             <label>Tamaño Titulo</label>
             <div class="input-group">
               <input type="number" class="form-control" name="size_titulo" value="<?php echo $conf->size_titulo ?>" >
             </div>
           </div>
-          
+
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Posicion Logo</label>
+            <select class="form-control" name="pos_logo">
+              <option value="pull-right" <?php if ($conf->pos_logo =="pull-right"): echo "selected"; endif; ?>>Derecha</option>
+              <option value="pull-left" <?php if ($conf->pos_logo =="pull-left"): echo "selected"; endif; ?>>Izquierda</option>
+              <option value="center-block" <?php if ($conf->pos_logo =="center-block"): echo "selected"; endif; ?>>Centro</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Fuente Titulo</label>
+            <div class="input-group">
+              <select class="form-control"  name="font_titulo" style="width:300px">
+                <?php $i=0; foreach ($fonts as $fo): ?>
+                  <option class="font_<?=$i?>" <?php if ($fo->id == $conf->font_titulo): echo "selected";  endif; ?> value="<?= $fo->id ?>">
+                      <?php echo $fo->nombre_font ?>
+                  </option>
+                <?php $i++; endforeach; ?>
+              </select>
+            </div>
+            <?php echo form_error('size_titulo', '<div class="label label-danger ">', '</div>'); ?>
+          </div>
         </div>
         <div style="clear:both"></div>
         <div class="col-md-6">
@@ -136,6 +186,7 @@ img.resize{
             <input type="file" name="logo"  />
           </div>
         </div>
+
 
         <div class="col-md-6">
           <div class="form-group">

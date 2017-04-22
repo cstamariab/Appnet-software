@@ -37,6 +37,8 @@
               <td class="text-center">
                 <div class="button-group">
                   <a title="Editar" href="<?= base_url()."super_admin/planes/editar/".$plan->id?>" class="btn btn-xs btn-warning" ><i class="glyphicon glyphicon-edit"></i></a>
+                  <a title="Eliminar" href="<?= base_url()."super_admin/planes/eliminar_plan/".$plan->id?>" class="btn btn-xs btn-danger" ><i class="glyphicon glyphicon-trash"></i></a>
+
                 </div>
               </td>
             </tr>

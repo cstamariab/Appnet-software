@@ -31,7 +31,7 @@
   <script src="<?php echo base_url()."public/super_admin/" ?>plugins/jQuery/jquery-2.2.3.min.js"></script>
   <!-- Bootstrap 3.3.6 -->
   <script src="<?php echo base_url()."public/super_admin/" ?>bootstrap/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="<?php echo base_url()."public/super_admin/" ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -237,6 +237,7 @@
   <script src="<?php echo base_url()."public/super_admin/" ?>jquery.rut.js"></script>
   <script src="<?php echo base_url()."public/super_admin/" ?>pace.js"></script>
   <script src="<?php echo base_url()."public/super_admin/" ?>bootstrap-notify.js"></script>
+  <script src="<?php echo base_url()."public/super_admin/" ?>plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 
   <script>
 
@@ -267,7 +268,15 @@
     $("input#rut").rut().on('rutInvalido', function(e) {
       alert("El rut " + $(this).val() + " es inválido");
     });
-
+    $(".textarea").wysihtml5({
+      "font-styles": false, //Font styling, e.g. h1, h2, etc. Default true
+      "emphasis": true, //Italics, bold, etc. Default true
+      "lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+      "html": false, //Button which allows you to edit the generated HTML. Default false
+      "link": false, //Button to insert a link. Default true
+      "image": false, //Button to insert an image. Default true,
+      "color": false //Button to change color of font
+    });
   });
   </script>
 </body>

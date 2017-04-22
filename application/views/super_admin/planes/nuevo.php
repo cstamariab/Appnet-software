@@ -17,13 +17,8 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <label for="exampleInputPassword1">Espacio Disco</label>
-              <select class="form-control"  name="espacio_disco">
-                <option value="0">Seleccion espacio disco..</option>
-                <?php  for ($i=50; $i <= 1000 ; $i = $i+50) { ?>
-                  <option value="<?= $i ?>"><?= $i ?></option>
-                <?php  } ?>
-              </select>
+              <label for="exampleInputPassword1">Espacio Disco Mb</label>
+              <input type="text" class="form-control" name="espacio_disco" placeholder="Ej: 1000 , 200 , 300 etc" value="<?php echo set_value('espacio_disco'); ?>">
               <?php echo form_error('espacio_disco', '<div class="label label-danger ">', '</div>'); ?>
             </div>
           </div>
@@ -32,7 +27,7 @@
               <label for="exampleInputPassword1">Sucursales</label>
               <select class="form-control" name="sucursales">
                 <option value="0">Seleccion sucursales..</option>
-                <?php  for ($i=1; $i <= 10 ; $i++) { ?>
+                <?php  for ($i=1; $i <= 20 ; $i++) { ?>
                   <option value="<?= $i ?>"><?= $i ?></option>
                 <?php  } ?>
               </select>

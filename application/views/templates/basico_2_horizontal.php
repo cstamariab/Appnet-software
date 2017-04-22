@@ -12,22 +12,49 @@
   <link rel="stylesheet" href="<?php echo base_url()."public/templates/basico_2/" ?>css/slick.css" media="screen">
   <!-- aqui cargamos las tipografias desde Google -->
   <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-  <style>
-  h1{ max-width: 700px; text-align: center;}
-  /*Asignamos con css las tipografias colores y tamaños correspondientes a los textos*/
-  h1{font-family: 'Exo 2', sans-serif; font-size: 60px; color:#fff}
-  .price{ font-size: 46px; color: #f90; }
 
-  <?php $i=0; foreach ($slides as $slide):  ?>
+  <?php $fonts = $this->font_model->get_fonts_activas(); ?>
+  <?php foreach ($fonts as  $value): ?>
+    <?php echo "<".$value->link_html.">"; ?>
+  <?php endforeach; ?>
+
+  <style>
+
+  /*Asignamos con css las tipografias colores y tamaños correspondientes a los textos*/
+  h1{font-family: 'Exo 2'}
+  .font_titulo_princ{
+    <?php echo $conf->font_titulo; ?>
+  }
+  <?php $i=0; foreach ($slides as $slide): ?>
+
+  .template-2 .slick li <?php echo ".caja_desc".$i ?>{
+    background-color: <?php echo $slide->color_marco_desc ?>;
+  }
+    <?php $conf_fonts =  $this->config_model->get_conf_fonts_text($slide->id); ?>
+
+    .<?php echo "font_titulo".$i ?>{
+      <?php echo $conf_fonts->prop_titulo; ?>
+    }
+
+    .<?php echo "font_precio".$i ?>{
+      <?php echo $conf_fonts->prop_precio; ?>
+    }
+
+    <?php $i++; endforeach; ?>
+
+  /*<?php $i=0; foreach ($slides as $slide):  ?>
     .<?php echo "titulo_props".$i ?>{
       <?php echo "color: ".$slide->color_titulo.";"; ?>
-      font-size: <?php echo $slide->size_titulo; ?>px;
+      font-size: <?php echo $slide->size_titulo; ?>vw;
     }
     .<?php echo "precio_props".$i ?>{
       <?php echo "color: ".$slide->color_precio.";"; ?>
-      font-size: <?php echo $slide->size_precio; ?>px;
+      font-size: <?php echo $slide->size_precio; ?>vw;
     }
-  <?php $i++; endforeach; ?>
+
+
+
+  <?php $i++; endforeach; ?>*/
 
   <?php if ($conf->img_fondo == ""): ?>
   <?php $img_fondo = base_url()."public/templates/imagenes/case-b.jpg"; ?>
@@ -35,39 +62,47 @@
   <?php $img_fondo = base_url()."public/sucursales/".$sucursal->ruta."/".$conf->img_fondo; ?>
   <?php endif; ?>
   .fullscreen{ width: 20px; height: 20px; background-image: url('<?php echo base_url()."public/templates/" ?>imagenes/fullscreen.svg'); background-size: 100% auto; position:absolute; bottom: 8px; right: 8px; z-index: 99999900000000000000000000000000000000009; cursor: pointer;}
-  .crazy-box{ background-image: url('<?php echo base_url()."public/templates" ?>/imagenes/crazy-box.svg'); padding: 10%; margin-top: -10px; background-repeat: no-repeat; background-position: center; z-index: 9999999!important}
   .template-2 .background-img{
     background-image:
     url('<?php echo $img_fondo ?>');
-    background-size: 100%
-    auto; height:calc(100vh - 33.3vw)
+
   }
   .nuevo{position: relative;}
   .nuevo:after{ content:''; position: absolute; top: 10px; right: 10px; width: 18%; height: 18%; background-image: url('<?php echo base_url()."public/templates/" ?>imagenes/nuevo.svg'); background-size: 100% auto; background-repeat: no-repeat;  z-index: 999999999999999999999}
   .title-header{
     <?php echo "color: ".$conf->color_titulo.";"; ?>
-    font-size: <?php echo $conf->size_titulo; ?>px;
+    font-size: <?php echo $conf->size_titulo; ?>vw;
   }
   </style>
 </head>
 <body>
+  
   <section class="template-2">
-    <div class="background-img center-content">
-      <div>
-        <?php if ($conf->activa_logo == 1): ?>
-          <?php if ($conf->logo != ""): ?>
-            <img class="logo logo-center" src="<?php echo base_url()."public/sucursales/".$sucursal->ruta."/".$conf->logo ?>" alt="">
-          <?php else: ?>
-            <img class="logo logo-center" src="<?php echo base_url()."public/templates/" ?>imagenes/logo-case.png" alt="">
-          <?php endif; ?>
-        <?php endif; ?>
-        <h1 class="title-header"><?php echo $conf->titulo ?></h1>
-      </div>
+
+    <div class="logo">
+    <?php if ($conf->activa_logo == 1): ?>
+  <?php if ($conf->logo != ""): ?>
+  <img class="logo logo-center <?= $conf->pos_logo ?>" src="<?php echo base_url()."public/sucursales/".$sucursal->ruta."/".$conf->logo ?>" alt="">
+  <?php else: ?>
+  <img class="logo logo-center <?= $conf->pos_logo ?>" src="<?php echo base_url()."public/templates/" ?>imagenes/logo-case.png" alt="">
+  <?php endif; ?>
+  <?php endif; ?>
+  </div>
+
+
+  <div class="background-img">
+      <div class="container">
+    <div class="col col-6 no-padding title-cont center-content">
+    <div>
+     <h1 class="title-header font_titulo_princ"><?php echo $conf->titulo ?></h1>
     </div>
+    </div>
+    </div>
+  </div>
 
 
 
-    <div class="multiple-items">
+    <div class="slick">
       <?php if(!$slides): ?>
         <li class="">
           <img src="<?php echo base_url()."public/templates/" ?>imagenes/case-0.jpg" alt="" width="100%">
@@ -126,12 +161,14 @@
         <?php $i = 0; foreach ($slides as  $slide): ?>
           <li class="">
             <img src="<?php echo base_url()."public/sucursales/".$sucursal->ruta."/".$slide->img_slide ?>" alt="" width="100%">
-            <div class="crazy-box crazy-carrusel" >
+            <div class="text <?= "caja_desc".$i ?>">
               <?php if ($slide->activa_titulo == 1): ?>
-              <p class="title <?= "titulo_props".$i ?>"><?php echo $slide->titulo ?></p>
+              <h2 class="<?= "titulo_props".$i ?> <?= "font_titulo".$i ?>"><?php echo $slide->titulo ?></h2>
+
+
             <?php endif; ?>
             <?php if ($slide->activa_precio == 1): ?>
-              <h1 class="price <?= "precio_props".$i ?>">$ <?php echo number_format($slide->precio,0,',','.'); ?></h1><?php if ($slide->activa_iva==1): ?><h2>+ Iva</h2><?php endif; ?>
+              <h1 class="<?= "precio_props".$i ?> <?= "font_precio".$i ?>">$ <?php echo number_format($slide->precio,0,',','.'); ?><?php if ($slide->activa_iva==1): ?><span>+ Iva</span></h1><?php endif; ?>
               <?php endif; ?>
             </div>
           </li>
@@ -174,11 +211,12 @@
     $( document ).ready(function() {
 
 
-      $('.multiple-items').slick({
+      $('.slick').slick({
         infinite: true,
         autoplay: true,
         arrows: false,
-        slidesToShow: 3
+        slidesToShow: 4,
+        slidesToScroll: 1
       });
     });
     new WOW().init();

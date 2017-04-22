@@ -1,4 +1,27 @@
 <!-- Input addon -->
+<!-- Input addon -->
+<?php foreach ($fonts as $fo): ?>
+  <?php echo "<".$fo->link_html.">" ?>
+<?php endforeach; ?>
+<style media="screen">
+<?php $i= 0;foreach ($fonts as $fo): ?>
+  .<?php echo "font_".$i ?>{
+    <?php echo $fo->propiedad_css ?>
+    font-size: 30px;
+  }
+<?php $i++; endforeach; ?>
+</style>
+<section class="content-header">
+  <h1>
+    Editar
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="<?= base_url()."admin"?>"><i class="fa fa-dashboard"></i> Inicio</a></li>
+    <li><a href="<?= base_url()."admin/config"?>"><i class="fa fa-dashboard"></i> Listado Sucursales</a></li>
+    <li><a href="<?= base_url()."admin/config/configurar_slides/".$id_sucursal?>"><i class="fa fa-dashboard"></i> Configurar Diapositivas</a></li>
+    <li class="active">Editar Diapositiva</li>
+  </ol>
+</section>
 <div class="box box-info">
   <form role="form" action="" method="post" enctype="multipart/form-data">
     <div class="box-header with-border">
@@ -21,6 +44,18 @@
           <label for="exampleInputEmail1">Titulo diapositiva</label>
           <input type="text" name="titulo" class="form-control" value="<?php echo $slide->titulo; ?>" />
           <?php echo form_error('titulo', '<div class="label label-danger ">', '</div>'); ?>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>Color Marco Descripcion </label>
+          <div class="input-group my-colorpicker2">
+            <input type="text" class="form-control" name="color_marco_desc" value="<?php echo $slide->color_marco_desc; ?>" required>
+            <div class="input-group-addon">
+              <i></i>
+            </div>
+          </div>
+          <?php echo form_error('color_marco_desc', '<div class="label label-danger ">', '</div>'); ?>
         </div>
       </div>
       <div class="col-md-6">
@@ -75,6 +110,37 @@
             <input type="number" class="form-control" name="size_precio" value="<?php echo $slide->size_precio; ?>" >
           </div>
         </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Fuente Titulo</label>
+          <div class="input-group">
+            <select class="form-control"  name="font_titulo" style="width:300px">
+              <?php $i=0; foreach ($fonts as $fo): ?>
+                <option class="font_<?=$i?>" <?php if ($fo->id == $fonts_conf->font_titulo): echo "selected";  endif; ?> value="<?= $fo->id ?>">
+                    <?php echo $fo->nombre_font ?>
+                </option>
+              <?php $i++; endforeach; ?>
+            </select>
+          </div>
+          <?php echo form_error('size_titulo', '<div class="label label-danger ">', '</div>'); ?>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Fuente Precio</label>
+          <div class="input-group">
+            <select class="form-control"  name="font_precio" style="width:300px">
+              <?php $i=0; foreach ($fonts as $fo): ?>
+                <option value="<?= $fo->id ?>" class="font_<?=$i?>" <?php if ($fo->id == $fonts_conf->font_precio): echo "selected";  endif; ?> >
+                    <?php echo $fo->nombre_font ?>
+                </option>
+              <?php $i++; endforeach; ?>
+            </select>
+          </div>
+        </div>
+        <?php echo form_error('size_precio', '<div class="label label-danger ">', '</div>'); ?>
       </div>
       <div style="clear:both"></div>
       <div class="col-md-8">

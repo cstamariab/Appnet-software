@@ -43,9 +43,6 @@ export default StyleSheet.create({
         "paddingBottom": 0,
         "paddingLeft": 0
     },
-    "section": {
-        "marginTop": -24
-    },
     "col": {
         "MozBoxSizing": "border-box",
         "WebkitBoxSizing": "border-box",
@@ -136,36 +133,30 @@ export default StyleSheet.create({
     "col-xs-12": {
         "width": "100%"
     },
-    "item": {},
-    "center-content": {
-        "display": "flex!important",
-        "MozAlignItems": "center",
-        "WebkitAlignItems": "center",
-        "MsAlignItems": "center",
-        "alignItems": "center",
-        "WebkitJustifyContent": "center",
-        "MsJustifyContent": "center",
-        "justifyContent": "center"
-    },
-    "template-1": {},
     "logo-center": {
         "display": "table",
         "marginTop": 24,
         "marginRight": "auto",
         "marginBottom": 0,
         "marginLeft": "auto",
-        "width": 220,
+        "width": 15 * vw,
         "position": "relative",
         "zIndex": 999999999999999
     },
+    "bg": {
+        "position": "absolute",
+        "zIndex": -1,
+        "width": 100 * vw,
+        "height": 100 * vh,
+        "backgroundSize": "100% auto"
+    },
     "template-1 container": {
-        "width": "90%",
+        "width": "95%",
         "marginTop": 0,
         "marginRight": "auto",
         "marginBottom": 0,
         "marginLeft": "auto",
         "display": "table",
-        "maxWidth": 1600,
         "height": 100 * vh
     },
     "template-1 content": {
@@ -183,101 +174,38 @@ export default StyleSheet.create({
         "marginTop": 0,
         "marginRight": "auto",
         "marginBottom": 0,
-        "marginLeft": "auto"
+        "marginLeft": "auto",
+        "visibility": "hidden"
     },
-    "crazy-box": {
-        "backgroundImage": "url('../imagenes/crazy-box.svg')",
-        "paddingTop": "10%",
-        "paddingRight": "10%",
-        "paddingBottom": "10%",
-        "paddingLeft": "10%",
-        "marginTop": -10,
-        "backgroundRepeat": "no-repeat",
-        "backgroundPosition": "center",
-        "zIndex": "9999999!important"
-    },
-    "crazy-carrusel": {
-        "position": "absolute",
-        "left": 10,
-        "bottom": 10
-    },
-    "multiple-items li": {
+    "template-1  h1": {
+        "fontSize": "11vw!important",
+        "color": "#f90",
         "position": "relative",
-        "height": 25 * vw,
-        "overflow": "hidden"
+        "float": "left",
+        "width": "100%"
     },
-    "nuevo": {
-        "position": "relative"
-    },
-    "nuevo:after": {
-        "content": "''",
-        "position": "absolute",
-        "top": 10,
-        "right": 10,
-        "width": "18%",
-        "height": "18%",
-        "backgroundImage": "url('../imagenes/nuevo.svg')",
-        "backgroundSize": "100% auto",
-        "backgroundRepeat": "no-repeat",
-        "zIndex": 1e+21
-    },
-    "logo-sushi": {
-        "backgroundImage": "url('../imagenes/logo-sushi.png')",
-        "backgroundSize": "100% auto",
-        "width": 300,
-        "height": 150,
-        "top": 30,
-        "position": "absolute",
-        "left": "50%",
-        "marginLeft": -150,
-        "backgroundRepeat": "no-repeat",
-        "zIndex": 9999
-    },
-    "template-2": {},
-    "template-2 background-img": {
-        "backgroundImage": "url('../imagenes/case-b.jpg')",
-        "backgroundSize": "100% auto",
-        "height": "calc(100vh - 33.3vw)"
-    },
-    "template-2-vertical background-img": {
-        "backgroundImage": "url('../imagenes/case-b-v.jpg')",
-        "backgroundSize": "100% auto",
-        "height": "calc(100vh - 50vw)"
-    },
-    "template-2 multiple-items": {
-        "width": "100%",
-        "zIndex": 99999999,
-        "height": 33.3 * vw,
-        "position": "absolute",
-        "bottom": 24
-    },
-    "template-2 multiple-items li": {
+    "template-1  h2": {
+        "fontSize": "4vw!important",
+        "color": "#FFF",
         "position": "relative",
-        "height": 33.3 * vw,
-        "overflow": "hidden"
+        "float": "left",
+        "width": "100%"
     },
-    "template-2-vertical multiple-items": {
-        "width": "100%",
-        "zIndex": 99999999,
-        "height": 50 * vw,
-        "position": "absolute",
-        "bottom": 24
-    },
-    "template-2-vertical multiple-items li": {
+    "template-1  h3": {
+        "fontSize": "2vw!important",
+        "color": "#fff",
         "position": "relative",
-        "height": 50 * vw,
-        "overflow": "hidden"
+        "float": "left",
+        "width": "100%"
     },
-    "template-3 producto price": {
-        "bottom": 0,
-        "fontSize": 40
+    "template-1 imagen": {
+        "width": "60%"
     },
-    "center": {
-        "marginTop": 0,
-        "marginRight": "auto!important",
-        "marginBottom": 0,
-        "marginLeft": "auto!important",
-        "display": "table!important"
+    "sushi": {
+        "backgroundImage": "url('../imagenes/sushi-bg.jpg')!important"
+    },
+    "sushi2": {
+        "backgroundImage": "url('../imagenes/sushi-bg2.jpg')!important"
     },
     "case-a": {
         "backgroundImage": "url('../imagenes/case-a.jpg')",
@@ -286,33 +214,30 @@ export default StyleSheet.create({
         "backgroundColor": "#fff"
     },
     "h1": {
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
+        "marginTop": "0!important",
+        "marginRight": "0!important",
+        "marginBottom": "0!important",
+        "marginLeft": "0!important",
         "paddingTop": 0,
         "paddingRight": 0,
         "paddingBottom": 0,
-        "paddingLeft": 0,
-        "color": "#fff",
-        "lineHeight": "100%"
+        "paddingLeft": 0
     },
     "h2": {
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
+        "marginTop": "0!important",
+        "marginRight": "0!important",
+        "marginBottom": "0!important",
+        "marginLeft": "0!important",
         "paddingTop": 0,
         "paddingRight": 0,
         "paddingBottom": 0,
-        "paddingLeft": 0,
-        "color": "#FFF"
+        "paddingLeft": 0
     },
     "h3": {
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
+        "marginTop": "0!important",
+        "marginRight": "0!important",
+        "marginBottom": "0!important",
+        "marginLeft": "0!important",
         "paddingTop": 0,
         "paddingRight": 0,
         "paddingBottom": 0,
@@ -347,22 +272,6 @@ export default StyleSheet.create({
         "paddingRight": 0,
         "paddingBottom": 0,
         "paddingLeft": 0
-    },
-    "*": {
-        "transition": "0.5s ease",
-        "OTransition": "0.5s ease",
-        "WebkitTransition": "0.5s ease"
-    },
-    "*:hover": {
-        "transition": "0.5s ease",
-        "OTransition": "0.5s ease",
-        "WebkitTransition": "0.5s ease"
-    },
-    "a": {
-        "color": "#E97603"
-    },
-    "a:hover": {
-        "textDecoration": "none"
     },
     "header": {
         "position": "relative",
@@ -580,7 +489,18 @@ export default StyleSheet.create({
         "opacity": 1,
         "visibility": "visible"
     },
-    "h1price": {
-        "fontSize": 200
+    "center-block": {
+        "display": "block",
+        "marginRight": "auto",
+        "marginLeft": "auto"
+    },
+    "pull-right": {
+        "float": "right !important",
+        "marginRight": "5em!important"
+    },
+    "pull-left": {
+        "float": "left !important",
+        "marginLeft": "5em!important",
+        "marginTop": "10px!important"
     }
 });

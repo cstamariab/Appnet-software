@@ -23,7 +23,7 @@ class Planes extends CI_Controller {
     if ($this->input->post()) {
 
       $this->form_validation->set_rules('plan', 'Plan', 'required');
-      $this->form_validation->set_rules('espacio_disco', 'Espacio Disco', 'required|callback_check_default');
+      $this->form_validation->set_rules('espacio_disco', 'Espacio Disco', 'required');
       $this->form_validation->set_rules('sucursales', 'Sucursales', 'required|callback_check_default');
       $this->form_validation->set_rules('slides', 'Slides', 'required|callback_check_default');
 
@@ -42,7 +42,12 @@ class Planes extends CI_Controller {
     $plan = $this->utl_model->get_plan($id);
     $this->layouts->view('super_admin/planes/editar',compact('plan'));
   }
-
+  public function eliminar_plan($id)
+  {
+    $this->utl_model->delete_plan($id);
+    messages('success' , 'Plan eliminado exitosamente');
+    redirect(base_url('super_admin/planes/index'));
+  }
   public function cambiar_estado_video()
   {
     $id = $this->input->post('id');
@@ -64,7 +69,7 @@ class Planes extends CI_Controller {
   {
     if ($this->input->post()) {
       $this->form_validation->set_rules('plan', 'Plan', 'required');
-      $this->form_validation->set_rules('espacio_disco', 'Espacio Disco', 'required|callback_check_default');
+      $this->form_validation->set_rules('espacio_disco', 'Espacio Disco', 'required');
       $this->form_validation->set_rules('sucursales', 'Sucursales', 'required|callback_check_default');
       $this->form_validation->set_rules('slides', 'Slides', 'required|callback_check_default');
 

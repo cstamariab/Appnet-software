@@ -150,6 +150,12 @@ class Utl_model extends CI_Model {
     $this->db->simple_query("UPDATE tbl_usuarios SET password = '$password' WHERE email = '$email'");
     return TRUE;
   }
+
+  public function delete_plan($id)
+  {
+    $this->db->simple_query("DELETE FROM utl_planes WHERE id = $id");
+    return TRUE;
+  }
   public function select_suc_estado_usuario($estado,$id)
   {
     $sql = "SELECT count(*) as cantidad from tbl_sucursal suc

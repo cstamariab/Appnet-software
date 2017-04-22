@@ -16,6 +16,7 @@ class Config extends CI_Controller {
   {
     $this->listado();
   }
+
   public function listado()
   {
     $sucursales = $this->sucursal_model->get_sucursales_usuario($this->session->userdata('id_user'));
@@ -80,6 +81,8 @@ class Config extends CI_Controller {
   {
     $sucursal = $this->sucursal_model->get_sucursal($id_sucursal);
     $slide = $this->config_model->get_slide($id_slide);
+    $fonts_conf = $this->config_model->get_conf_fonts($id_slide);
+    $fonts = $this->font_model->get_fonts_activas();
     if ($this->input->post()) {
       $this->form_validation->set_rules('nombre'				, 'Nombre', 'required');
       $this->form_validation->set_rules('titulo', 'Titulo', 'required');
@@ -112,6 +115,7 @@ class Config extends CI_Controller {
         $color_titulo = $this->input->post('color_titulo');
         $color_desc = $this->input->post('color_descripcion');
         $color_precio = $this->input->post('color_precio');
+        $color_marco_desc = $this->input->post('color_marco_desc');
 
         $size_titulo = $this->input->post('size_titulo');
         $size_desc = $this->input->post('size_desc');
@@ -175,16 +179,23 @@ class Config extends CI_Controller {
         $logo_prod = "";
         $proveedor_video = "";
         $video = "";
-        $this->config_model->update_slide($slide->id,$nombre,$titulo,$desc,$posicion,$precio,$img_url,$img_fondo,$logo_prod,$proveedor_video,$video,$color_titulo,$color_desc,$color_precio,$size_titulo,$size_desc,$size_precio);
+
+        $font_titulo = $this->input->post('font_titulo');
+        $font_desc = $this->input->post('font_desc');
+        $font_precio = $this->input->post('font_precio');
+        $color_marco_desc = $this->input->post('color_marco_desc');
+        $this->config_model->update_fonts_slide($slide->id,$font_titulo,$font_desc,$font_precio);
+        $this->config_model->update_slide($slide->id,$nombre,$titulo,$desc,$posicion,$precio,$img_url,$img_fondo,$logo_prod,$proveedor_video,$video,$color_titulo,$color_desc,$color_precio,$size_titulo,$size_desc,$size_precio,$color_marco_desc);
         $this->config_model->set_refresh($id_sucursal);
         messages('success','Diapositiva editada exitosamente');
         redirect(base_url()."admin/config/editar_slide/".$id_sucursal."/".$slide->id);
       }
     }
-    $this->layouts->view('admin/config/editar',compact('slide','sucursal'));
+    $this->layouts->view('admin/config/editar',compact('slide','sucursal','fonts','fonts_conf','id_sucursal'));
   }
   public function nuevo_slide($id_sucursal)
   {
+    $fonts = $this->font_model->get_fonts_activas();
     $sucursal = $this->sucursal_model->get_sucursal($id_sucursal);
     if ($this->config_model->get_cant_slides($sucursal->id) >= $sucursal->slides) {
       messages('error','Cantidad de slides supera plan actual.');
@@ -233,6 +244,16 @@ class Config extends CI_Controller {
           $activa_iva = 1;
         }else{
           $activa_iva = 0;
+        }
+        if ($this->input->post('activa_img') == 'on') {
+          $activa_img = 1;
+        }else{
+          $activa_img = 0;
+        }
+        if ($this->input->post('activa_marco_desc') == 'on') {
+          $activa_marco_desc = 1;
+        }else{
+          $activa_marco_desc = 0;
         }
         // Color picker
         $color_titulo = $this->input->post('color_titulo');
@@ -290,21 +311,33 @@ class Config extends CI_Controller {
           redirect(base_url()."admin/config/configurar_slides/".$id_sucursal);
         }
         $estado = 1;
-        $this->config_model->insert_slide(
+
+        $font_titulo = $this->input->post('font_titulo');
+        $font_desc = $this->input->post('font_desc');
+        $font_precio = $this->input->post('font_precio');
+        $color_marco_desc = $this->input->post('color_marco_desc');
+
+        $id_slide = $this->config_model->insert_slide(
           $id_sucursal,$nombre,$titulo,$desc,$posicion,$precio,$img_url
-          ,$activa_titulo,$activa_desc,$activa_precio,$activa_iva,$estado,$img_fondo,'','','',
+          ,$activa_titulo,$activa_desc,$activa_precio,$activa_iva,$activa_img,$activa_marco_desc,$color_marco_desc,$estado,$img_fondo,'','','',
           $color_titulo,$color_desc,$color_precio,$size_titulo,$size_desc,$size_precio);
+
+          $this->config_model->insert_fonts_slide($id_slide,$font_titulo,$font_desc,$font_precio);
           $this->config_model->set_refresh($id_sucursal);
+
+
           messages('success','Diapositiva creada exitosamente');
           redirect(base_url('admin/config/configurar_slides/'.$id_sucursal));
         }
       }
-      $this->layouts->view('admin/config/nuevo');
+      $this->layouts->view('admin/config/nuevo',compact('id_sucursal','fonts'));
     }
 
     public function nuevo_slide_tmp_2($id_sucursal)
     {
       $sucursal = $this->sucursal_model->get_sucursal($id_sucursal);
+      $fonts_conf = $this->config_model->get_conf_fonts($id_slide);
+      $fonts = $this->font_model->get_fonts_activas();
       if ($this->config_model->get_cant_slides($sucursal->id) >= $sucursal->slides) {
         messages('error','Cantidad de slides supera plan actual.');
         redirect(base_url().'admin/config/configurar_slides/'.$id_sucursal);
@@ -397,13 +430,24 @@ class Config extends CI_Controller {
             redirect(base_url()."admin/config/nuevo_slide_tmp_2/".$id_sucursal);
           }
           $estado = 1;
-          $this->config_model->insert_slide($id_sucursal,$nombre,$titulo,'',$posicion,$precio,$img_url,$activa_titulo,'',$activa_precio,$activa_iva,$estado,'',$logo_url,'','',$color_titulo,'',$color_precio,$size_titulo,"",$size_precio);
+          $activa_img = '';
+          $activa_marco_desc = "";
+
+          $font_titulo = $this->input->post('font_titulo');
+          $font_desc = "";
+          $font_precio = $this->input->post('font_precio');
+          $color_marco_desc = $this->input->post('color_marco_desc');
+
+          $this->config_model->insert_slide($id_sucursal,$nombre,$titulo,'',$posicion,$precio,$img_url,$activa_titulo,'',
+          $activa_precio,$activa_iva,$activa_img,$activa_marco_desc,$color_marco_desc,$estado,'',$logo_url,'','',$color_titulo,'',$color_precio,$size_titulo,"",$size_precio);
+
+          $this->config_model->insert_fonts_slide($id_slide,$font_titulo,$font_desc,$font_precio);
           $this->config_model->set_refresh($id_sucursal);
           messages('success','Diapositiva creada exitosamente');
           redirect(base_url()."admin/config/configurar_slides/".$id_sucursal);
         } // form validation
       }
-      $this->layouts->view('admin/config/nuevo_tmp_2');
+      $this->layouts->view('admin/config/nuevo_tmp_2',compact('id_sucursal','fonts_conf','fonts','id_sucursal'));
     }
     public function estado_video()
     {
@@ -417,6 +461,8 @@ class Config extends CI_Controller {
     {
       $sucursal = $this->sucursal_model->get_sucursal($id_sucursal);
       $slide = $this->config_model->get_slide($id_slide);
+      $fonts = $this->font_model->get_fonts_activas();
+      $fonts_conf = $this->config_model->get_conf_fonts($id_slide);
       if ($this->input->post()) {
         $this->form_validation->set_rules('nombre'				, 'Nombre', 'required');
         $this->form_validation->set_rules('titulo', 'Titulo', 'required');
@@ -481,15 +527,22 @@ class Config extends CI_Controller {
               echo dd($error);
             }
           }
+          $color_marco_desc = $this->input->post('color_marco_desc');
+          $font_desc = "";
+          $font_titulo = $this->input->post('font_titulo');
 
-          $this->config_model->update_slide($slide->id,$nombre,$titulo,'',$posicion,$precio,$img_url,'',$logo_url,'','',$color_titulo,'',$color_precio,$size_titulo,0,$size_precio);
+          $font_precio = $this->input->post('font_precio');
+          $this->config_model->update_fonts_slide($slide->id,$font_titulo,$font_desc,$font_precio);
+
+          $this->config_model->update_slide($slide->id,$nombre,$titulo,'',$posicion,$precio,$img_url
+          ,'',$logo_url,'','',$color_titulo,'',$color_precio,$size_titulo,0,$size_precio,$color_marco_desc);
           $this->config_model->set_refresh($id_sucursal);
           messages('success','Diapositiva editada exitosamente');
           redirect(base_url()."admin/config/editar_slide_tmp_2/".$id_sucursal."/".$slide->id);
 
         }
       }
-      $this->layouts->view('admin/config/edit_tmp_2',compact('sucursal','slide'));
+      $this->layouts->view('admin/config/edit_tmp_2',compact('sucursal','slide','fonts_conf','fonts','id_sucursal'));
     }
     function check_default($post_string)
     {
@@ -508,9 +561,17 @@ class Config extends CI_Controller {
           $nombre = $this->input->post('nombre');
           $proveedor_video = $this->input->post('proveedor_video');
           $link = $this->input->post('link');
-
+          $color_titulo = "";
+          $color_desc = "";
+          $color_precio = "";
+          $size_titulo = "";
+          $size_desc = "";
+          $size_precio = "";
+          $activa_marco_desc = "";
+          $color_marco_desc = "";
           $estado = 1;
-          $this->config_model->insert_slide($id_sucursal,$nombre,'','','','','','','','','',$estado,'','',$proveedor_video,$link);
+          $this->config_model->insert_slide($id_sucursal,$nombre,'','','','','','','','','','',$activa_marco_desc,$color_marco_desc,$estado,'','',$proveedor_video,$link,
+          $color_titulo,$color_desc,$color_precio,$size_titulo,$size_desc,$size_precio);
           $this->config_model->set_refresh($id_sucursal);
           messages('success','Diapositiva creada exitosamente');
           redirect(base_url('admin/config/configurar_slides/'.$id_sucursal));
@@ -534,7 +595,7 @@ class Config extends CI_Controller {
           $link = $this->input->post('link');
 
           $estado = 1;
-          $this->config_model->update_slide($slide->id,$nombre,'','','','','','','',$proveedor_video,$link);
+          $this->config_model->update_slide($slide->id,$nombre,'','','','','','','',$proveedor_video,$link,'','','','',0,'','');
           $this->config_model->set_refresh($id_sucursal);
           messages('success','Diapositiva editada exitosamente');
           redirect(base_url('admin/config/editar_slide_video/'.$id_sucursal."/".$slide->id));
@@ -546,13 +607,15 @@ class Config extends CI_Controller {
     {
       $sucursal = $this->sucursal_model->get_sucursal($id);
       $conf = $this->config_model->get_config_sucursal($id);
-      $img_conf = $this->config_model->get_img_suc($id);
 
+      $img_conf = $this->config_model->get_img_suc($id);
+      $fonts = $this->font_model->get_fonts_activas();
       if ($this->input->post()) {
 
 
         $id_sucursal = $this->input->post('id_sucursal');
         $titulo = $this->input->post('titulo');
+        $font_titulo = $this->input->post('font_titulo');
         $logo = $_FILES['logo']['name'];
 
         $img_fondo = $_FILES['img_fondo']['name'];
@@ -628,7 +691,9 @@ class Config extends CI_Controller {
           messages('error','Limite de datos excedido , total datos utilizados : '.size_folder($sucursal->ruta)." MB");
           redirect(base_url()."admin/config/configurar_sucursal/".$id_sucursal);
         }
-        $this->config_model->update_conf_suc($id_sucursal,$logo_url,$titulo,$img_fondo_url,$activa_logo,$color_titulo,$size_titulo);
+        $pos_logo = $this->input->post('pos_logo');
+        $this->config_model->update_conf_suc($id_sucursal,$logo_url,$titulo
+        ,$img_fondo_url,$activa_logo,$color_titulo,$size_titulo,$pos_logo,$font_titulo);
 
         $this->config_model->set_refresh($id_sucursal);
         messages('success','Sucursal editada  exitosamente ');
@@ -637,12 +702,21 @@ class Config extends CI_Controller {
 
 
       $templates = $this->template_model->get_templates();
-      $this->layouts->view('admin/config/config', compact('conf','templates','sucursal','img_conf'));
+      $this->layouts->view('admin/config/config', compact('conf','templates','sucursal','img_conf','fonts'));
     }
     public function change_template()
     {
       $id = $this->input->post('id');
       $id_sucursal = $this->input->post('id_sucursal');
       $this->config_model->change_template($id,$id_sucursal);
+    }
+
+
+    // METODOS PARA CONFIGURACION TEMPLATE 4
+
+    public function conf_tmp_4($id_sucursal)
+    {
+      $fonts = $this->font_model->get_fonts_activas();
+      $this->layouts->view('admin/config/conf_tmp_4',compact('fonts'));
     }
   }

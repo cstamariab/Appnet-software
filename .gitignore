@@ -1,5 +1,7 @@
-/application/config/database.php
+
 .ftpconfig
 .ftpignore
 .htaccess
 composer.json
+default_template_1
+public
